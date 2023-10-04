@@ -1,0 +1,400 @@
+(venv) ➜  python_part git:(main) ✗ mlagents-learn config/gwo.yaml --run-id=GWO_2 
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+        
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 1.11.0+cpu
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Connected to Unity environment with package version 2.0.1 and communication version 1.5.0
+[INFO] Connected new brain: GWO_Defender?team=0
+[INFO] Hyperparameters for behavior name GWO_Defender: 
+	trainer_type:	poca
+	hyperparameters:	
+	  batch_size:	1024
+	  buffer_size:	10240
+	  learning_rate:	0.0003
+	  beta:	0.01
+	  epsilon:	0.2
+	  lambd:	0.95
+	  num_epoch:	3
+	  learning_rate_schedule:	constant
+	  beta_schedule:	constant
+	  epsilon_schedule:	constant
+	network_settings:	
+	  normalize:	False
+	  hidden_units:	200
+	  num_layers:	2
+	  vis_encode_type:	simple
+	  memory:	None
+	  goal_conditioning_type:	hyper
+	  deterministic:	False
+	reward_signals:	
+	  extrinsic:	
+	    gamma:	0.99
+	    strength:	1.0
+	    network_settings:	
+	      normalize:	False
+	      hidden_units:	128
+	      num_layers:	2
+	      vis_encode_type:	simple
+	      memory:	None
+	      goal_conditioning_type:	hyper
+	      deterministic:	False
+	init_path:	None
+	keep_checkpoints:	10
+	checkpoint_interval:	500000
+	max_steps:	15000000
+	time_horizon:	64
+	summary_freq:	50000
+	threaded:	False
+	self_play:	None
+	behavioral_cloning:	None
+[INFO] GWO_Defender. Step: 50000. Time Elapsed: 60.747 s. Mean Reward: 0.000. Mean Group Reward: 37.350. Training.
+[INFO] GWO_Defender. Step: 100000. Time Elapsed: 127.815 s. Mean Reward: 0.000. Mean Group Reward: 37.751. Training.
+[INFO] GWO_Defender. Step: 150000. Time Elapsed: 185.229 s. Mean Reward: 0.000. Mean Group Reward: 37.841. Training.
+[INFO] GWO_Defender. Step: 200000. Time Elapsed: 242.068 s. Mean Reward: 0.000. Mean Group Reward: 36.090. Training.
+[INFO] GWO_Defender. Step: 250000. Time Elapsed: 299.168 s. Mean Reward: 0.000. Mean Group Reward: 35.303. Training.
+[INFO] GWO_Defender. Step: 300000. Time Elapsed: 356.944 s. Mean Reward: 0.000. Mean Group Reward: 33.800. Training.
+[INFO] GWO_Defender. Step: 350000. Time Elapsed: 413.252 s. Mean Reward: 0.000. Mean Group Reward: 37.860. Training.
+[INFO] GWO_Defender. Step: 400000. Time Elapsed: 468.846 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 450000. Time Elapsed: 525.318 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 500000. Time Elapsed: 581.839 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-499944.onnx
+[INFO] GWO_Defender. Step: 550000. Time Elapsed: 637.548 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 600000. Time Elapsed: 693.816 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 650000. Time Elapsed: 750.250 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 700000. Time Elapsed: 805.849 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 750000. Time Elapsed: 867.205 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 800000. Time Elapsed: 926.720 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 850000. Time Elapsed: 988.011 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 900000. Time Elapsed: 1050.413 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 950000. Time Elapsed: 1110.298 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 1000000. Time Elapsed: 1172.228 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-999972.onnx
+[INFO] GWO_Defender. Step: 1050000. Time Elapsed: 1227.164 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 1100000. Time Elapsed: 1284.002 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 1150000. Time Elapsed: 1340.713 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 1200000. Time Elapsed: 1398.058 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 1250000. Time Elapsed: 1454.849 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 1300000. Time Elapsed: 1512.862 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 1350000. Time Elapsed: 1570.290 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 1400000. Time Elapsed: 1624.280 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 1450000. Time Elapsed: 1681.614 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 1500000. Time Elapsed: 1739.584 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-1499938.onnx
+[INFO] GWO_Defender. Step: 1550000. Time Elapsed: 1796.900 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 1600000. Time Elapsed: 1854.444 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 1650000. Time Elapsed: 1909.731 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 1700000. Time Elapsed: 1964.358 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 1750000. Time Elapsed: 2019.883 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 1800000. Time Elapsed: 2075.141 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 1850000. Time Elapsed: 2130.872 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 1900000. Time Elapsed: 2188.466 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 1950000. Time Elapsed: 2244.378 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 2000000. Time Elapsed: 2299.062 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-1999966.onnx
+[INFO] GWO_Defender. Step: 2050000. Time Elapsed: 2354.770 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 2100000. Time Elapsed: 2408.163 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 2150000. Time Elapsed: 2465.631 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 2200000. Time Elapsed: 2522.936 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 2250000. Time Elapsed: 2579.036 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 2300000. Time Elapsed: 2638.898 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 2350000. Time Elapsed: 2696.183 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 2400000. Time Elapsed: 2752.424 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 2450000. Time Elapsed: 2809.212 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 2500000. Time Elapsed: 2863.882 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-2499996.onnx
+[INFO] GWO_Defender. Step: 2550000. Time Elapsed: 2919.093 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 2600000. Time Elapsed: 2976.884 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 2650000. Time Elapsed: 3033.718 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 2700000. Time Elapsed: 3091.712 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 2750000. Time Elapsed: 3149.840 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 2800000. Time Elapsed: 3206.114 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 2850000. Time Elapsed: 3262.409 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 2900000. Time Elapsed: 3322.308 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 2950000. Time Elapsed: 3379.373 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 3000000. Time Elapsed: 3437.615 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-2999960.onnx
+[INFO] GWO_Defender. Step: 3050000. Time Elapsed: 3493.602 s. Mean Reward: 0.000. Mean Group Reward: 39.913. Training.
+[INFO] GWO_Defender. Step: 3100000. Time Elapsed: 3550.068 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 3150000. Time Elapsed: 3606.974 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 3200000. Time Elapsed: 3664.092 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 3250000. Time Elapsed: 3721.936 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 3300000. Time Elapsed: 3777.312 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 3350000. Time Elapsed: 3834.341 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 3400000. Time Elapsed: 3891.711 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 3450000. Time Elapsed: 3948.658 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 3500000. Time Elapsed: 4008.119 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-3499946.onnx
+[INFO] GWO_Defender. Step: 3550000. Time Elapsed: 4062.030 s. Mean Reward: 0.000. Mean Group Reward: 38.944. Training.
+[INFO] GWO_Defender. Step: 3600000. Time Elapsed: 4118.441 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 3650000. Time Elapsed: 4174.318 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 3700000. Time Elapsed: 4229.308 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 3750000. Time Elapsed: 4285.125 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 3800000. Time Elapsed: 4343.336 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 3850000. Time Elapsed: 4398.828 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 3900000. Time Elapsed: 4454.333 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 3950000. Time Elapsed: 4508.319 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 4000000. Time Elapsed: 4564.852 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-3999974.onnx
+[INFO] GWO_Defender. Step: 4050000. Time Elapsed: 4621.152 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 4100000. Time Elapsed: 4678.691 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 4150000. Time Elapsed: 4736.713 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 4200000. Time Elapsed: 4793.678 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 4250000. Time Elapsed: 4850.542 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 4300000. Time Elapsed: 4906.261 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 4350000. Time Elapsed: 4960.300 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 4400000. Time Elapsed: 5017.471 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 4450000. Time Elapsed: 5075.295 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 4500000. Time Elapsed: 5130.927 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-4499938.onnx
+[INFO] GWO_Defender. Step: 4550000. Time Elapsed: 5186.895 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 4600000. Time Elapsed: 5243.666 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 4650000. Time Elapsed: 5301.219 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 4700000. Time Elapsed: 5355.238 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 4750000. Time Elapsed: 5412.507 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 4800000. Time Elapsed: 5468.391 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 4850000. Time Elapsed: 5524.745 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 4900000. Time Elapsed: 5581.803 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 4950000. Time Elapsed: 5639.496 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 5000000. Time Elapsed: 5696.816 s. Mean Reward: 0.000. Mean Group Reward: 38.831. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-4999964.onnx
+[INFO] GWO_Defender. Step: 5050000. Time Elapsed: 5748.574 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 5100000. Time Elapsed: 5804.841 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 5150000. Time Elapsed: 5862.000 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 5200000. Time Elapsed: 5918.331 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 5250000. Time Elapsed: 5974.045 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 5300000. Time Elapsed: 6028.961 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 5350000. Time Elapsed: 6083.735 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 5400000. Time Elapsed: 6138.023 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 5450000. Time Elapsed: 6196.276 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 5500000. Time Elapsed: 6251.930 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-5499996.onnx
+[INFO] GWO_Defender. Step: 5550000. Time Elapsed: 6308.287 s. Mean Reward: 0.000. Mean Group Reward: 39.319. Training.
+[INFO] GWO_Defender. Step: 5600000. Time Elapsed: 6366.299 s. Mean Reward: 0.000. Mean Group Reward: 39.293. Training.
+[INFO] GWO_Defender. Step: 5650000. Time Elapsed: 6423.505 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 5700000. Time Elapsed: 6478.680 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 5750000. Time Elapsed: 6535.622 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 5800000. Time Elapsed: 6591.159 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 5850000. Time Elapsed: 6649.510 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 5900000. Time Elapsed: 6706.665 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 5950000. Time Elapsed: 6764.429 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 6000000. Time Elapsed: 6822.575 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-5999946.onnx
+[INFO] GWO_Defender. Step: 6050000. Time Elapsed: 6879.085 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 6100000. Time Elapsed: 6937.321 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 6150000. Time Elapsed: 6992.645 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 6200000. Time Elapsed: 7051.195 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 6250000. Time Elapsed: 7109.375 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 6300000. Time Elapsed: 7165.899 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 6350000. Time Elapsed: 7221.629 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 6400000. Time Elapsed: 7278.242 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 6450000. Time Elapsed: 7334.121 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 6500000. Time Elapsed: 7389.147 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-6499976.onnx
+[INFO] GWO_Defender. Step: 6550000. Time Elapsed: 7447.906 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 6600000. Time Elapsed: 7505.786 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 6650000. Time Elapsed: 7563.995 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 6700000. Time Elapsed: 7622.728 s. Mean Reward: 0.000. Mean Group Reward: 38.982. Training.
+[INFO] GWO_Defender. Step: 6750000. Time Elapsed: 7683.997 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 6800000. Time Elapsed: 7746.854 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 6850000. Time Elapsed: 7804.240 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 6900000. Time Elapsed: 7864.329 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 6950000. Time Elapsed: 7926.222 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 7000000. Time Elapsed: 7987.665 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-6999988.onnx
+[INFO] GWO_Defender. Step: 7050000. Time Elapsed: 8049.852 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 7100000. Time Elapsed: 8107.829 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 7150000. Time Elapsed: 8168.536 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 7200000. Time Elapsed: 8226.216 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 7250000. Time Elapsed: 8285.850 s. Mean Reward: 0.000. Mean Group Reward: 39.727. Training.
+[INFO] GWO_Defender. Step: 7300000. Time Elapsed: 8345.524 s. Mean Reward: 0.000. Mean Group Reward: 39.975. Training.
+[INFO] GWO_Defender. Step: 7350000. Time Elapsed: 8408.752 s. Mean Reward: 0.000. Mean Group Reward: 39.981. Training.
+[INFO] GWO_Defender. Step: 7400000. Time Elapsed: 8468.401 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 7450000. Time Elapsed: 8529.887 s. Mean Reward: 0.000. Mean Group Reward: 39.533. Training.
+[INFO] GWO_Defender. Step: 7500000. Time Elapsed: 8588.707 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-7499940.onnx
+[INFO] GWO_Defender. Step: 7550000. Time Elapsed: 8648.451 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 7600000. Time Elapsed: 8715.657 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 7650000. Time Elapsed: 8780.932 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 7700000. Time Elapsed: 8843.977 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 7750000. Time Elapsed: 8911.247 s. Mean Reward: 0.000. Mean Group Reward: 37.643. Training.
+[INFO] GWO_Defender. Step: 7800000. Time Elapsed: 8980.046 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 7850000. Time Elapsed: 9046.383 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 7900000. Time Elapsed: 9110.576 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 7950000. Time Elapsed: 9174.343 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 8000000. Time Elapsed: 9236.350 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-7999952.onnx
+[INFO] GWO_Defender. Step: 8050000. Time Elapsed: 9292.646 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 8100000. Time Elapsed: 9352.288 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 8150000. Time Elapsed: 9417.299 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 8200000. Time Elapsed: 9478.319 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 8250000. Time Elapsed: 9576.394 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 8300000. Time Elapsed: 9662.864 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 8350000. Time Elapsed: 9745.442 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 8400000. Time Elapsed: 9800.897 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 8450000. Time Elapsed: 9858.020 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 8500000. Time Elapsed: 9914.109 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-8499984.onnx
+[INFO] GWO_Defender. Step: 8550000. Time Elapsed: 9971.466 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 8600000. Time Elapsed: 10026.259 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 8650000. Time Elapsed: 10083.755 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 8700000. Time Elapsed: 10143.896 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 8750000. Time Elapsed: 10202.538 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 8800000. Time Elapsed: 10259.043 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 8850000. Time Elapsed: 10316.487 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 8900000. Time Elapsed: 10374.346 s. Mean Reward: 0.000. Mean Group Reward: 39.847. Training.
+[INFO] GWO_Defender. Step: 8950000. Time Elapsed: 10429.198 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 9000000. Time Elapsed: 10485.615 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-8999952.onnx
+[INFO] GWO_Defender. Step: 9050000. Time Elapsed: 10545.291 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 9100000. Time Elapsed: 10604.349 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 9150000. Time Elapsed: 10662.241 s. Mean Reward: 0.000. Mean Group Reward: 39.559. Training.
+[INFO] GWO_Defender. Step: 9200000. Time Elapsed: 10720.429 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 9250000. Time Elapsed: 10777.395 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 9300000. Time Elapsed: 10834.798 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 9350000. Time Elapsed: 10898.441 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 9400000. Time Elapsed: 10961.154 s. Mean Reward: 0.000. Mean Group Reward: 39.403. Training.
+[INFO] GWO_Defender. Step: 9450000. Time Elapsed: 11023.161 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 9500000. Time Elapsed: 11084.659 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-9499946.onnx
+[INFO] GWO_Defender. Step: 9550000. Time Elapsed: 11145.864 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 9600000. Time Elapsed: 11203.067 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 9650000. Time Elapsed: 11260.658 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 9700000. Time Elapsed: 11321.974 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 9750000. Time Elapsed: 11383.859 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 9800000. Time Elapsed: 11442.357 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 9850000. Time Elapsed: 11504.697 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 9900000. Time Elapsed: 11563.384 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 9950000. Time Elapsed: 11623.018 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 10000000. Time Elapsed: 11678.509 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-9999974.onnx
+[INFO] GWO_Defender. Step: 10050000. Time Elapsed: 11739.108 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 10100000. Time Elapsed: 11804.088 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 10150000. Time Elapsed: 11867.916 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 10200000. Time Elapsed: 11928.866 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 10250000. Time Elapsed: 11991.256 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 10300000. Time Elapsed: 12054.249 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 10350000. Time Elapsed: 12111.874 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 10400000. Time Elapsed: 12167.899 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 10450000. Time Elapsed: 12226.304 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 10500000. Time Elapsed: 12288.803 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-10499938.onnx
+[INFO] GWO_Defender. Step: 10550000. Time Elapsed: 12348.978 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 10600000. Time Elapsed: 12408.189 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 10650000. Time Elapsed: 12468.622 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 10700000. Time Elapsed: 12525.525 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 10750000. Time Elapsed: 12584.317 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 10800000. Time Elapsed: 12642.340 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 10850000. Time Elapsed: 12706.317 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 10900000. Time Elapsed: 12768.215 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 10950000. Time Elapsed: 12829.002 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 11000000. Time Elapsed: 12885.907 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-10999970.onnx
+[INFO] GWO_Defender. Step: 11050000. Time Elapsed: 12943.375 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 11100000. Time Elapsed: 13001.865 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 11150000. Time Elapsed: 13062.863 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 11200000. Time Elapsed: 13122.863 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 11250000. Time Elapsed: 13182.001 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 11300000. Time Elapsed: 13240.232 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 11350000. Time Elapsed: 13296.791 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 11400000. Time Elapsed: 13353.457 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 11450000. Time Elapsed: 13411.975 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 11500000. Time Elapsed: 13471.264 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-11499998.onnx
+[INFO] GWO_Defender. Step: 11550000. Time Elapsed: 13529.899 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 11600000. Time Elapsed: 13589.065 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 11650000. Time Elapsed: 13648.709 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 11700000. Time Elapsed: 13705.329 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 11750000. Time Elapsed: 13760.925 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 11800000. Time Elapsed: 13817.488 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 11850000. Time Elapsed: 13873.800 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 11900000. Time Elapsed: 13932.415 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 11950000. Time Elapsed: 13990.868 s. Mean Reward: 0.000. Mean Group Reward: 39.615. Training.
+[INFO] GWO_Defender. Step: 12000000. Time Elapsed: 14049.080 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-11999986.onnx
+[INFO] GWO_Defender. Step: 12050000. Time Elapsed: 14108.421 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 12100000. Time Elapsed: 14162.902 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 12150000. Time Elapsed: 14221.712 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 12200000. Time Elapsed: 14282.166 s. Mean Reward: 0.000. Mean Group Reward: 39.544. Training.
+[INFO] GWO_Defender. Step: 12250000. Time Elapsed: 14338.581 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 12300000. Time Elapsed: 14397.451 s. Mean Reward: 0.000. Mean Group Reward: 39.109. Training.
+[INFO] GWO_Defender. Step: 12350000. Time Elapsed: 14452.614 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 12400000. Time Elapsed: 14510.112 s. Mean Reward: 0.000. Mean Group Reward: 39.918. Training.
+[INFO] GWO_Defender. Step: 12450000. Time Elapsed: 14563.147 s. Mean Reward: 0.000. Mean Group Reward: 39.223. Training.
+[INFO] GWO_Defender. Step: 12500000. Time Elapsed: 14620.560 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-12499976.onnx
+[INFO] GWO_Defender. Step: 12550000. Time Elapsed: 14676.607 s. Mean Reward: 0.000. Mean Group Reward: 39.450. Training.
+[INFO] GWO_Defender. Step: 12600000. Time Elapsed: 14732.365 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 12650000. Time Elapsed: 14788.883 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 12700000. Time Elapsed: 14849.009 s. Mean Reward: 0.000. Mean Group Reward: 39.154. Training.
+[INFO] GWO_Defender. Step: 12750000. Time Elapsed: 14906.546 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 12800000. Time Elapsed: 14961.187 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 12850000. Time Elapsed: 15019.348 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 12900000. Time Elapsed: 15076.806 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 12950000. Time Elapsed: 15134.779 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 13000000. Time Elapsed: 15192.233 s. Mean Reward: 0.000. Mean Group Reward: 39.428. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-12999952.onnx
+[INFO] GWO_Defender. Step: 13050000. Time Elapsed: 15250.723 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 13100000. Time Elapsed: 15308.857 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 13150000. Time Elapsed: 15367.319 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 13200000. Time Elapsed: 15423.992 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 13250000. Time Elapsed: 15482.660 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 13300000. Time Elapsed: 15540.450 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 13350000. Time Elapsed: 15600.531 s. Mean Reward: 0.000. Mean Group Reward: 38.593. Training.
+[INFO] GWO_Defender. Step: 13400000. Time Elapsed: 15659.352 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 13450000. Time Elapsed: 15717.057 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 13500000. Time Elapsed: 15772.840 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-13499942.onnx
+[INFO] GWO_Defender. Step: 13550000. Time Elapsed: 15828.314 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 13600000. Time Elapsed: 15888.739 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 13650000. Time Elapsed: 15946.393 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 13700000. Time Elapsed: 16004.075 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 13750000. Time Elapsed: 16060.901 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 13800000. Time Elapsed: 16117.648 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 13850000. Time Elapsed: 16177.596 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 13900000. Time Elapsed: 16231.183 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 13950000. Time Elapsed: 16288.846 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 14000000. Time Elapsed: 16345.800 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-13999970.onnx
+[INFO] GWO_Defender. Step: 14050000. Time Elapsed: 16403.011 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 14100000. Time Elapsed: 16461.543 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 14150000. Time Elapsed: 16519.623 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 14200000. Time Elapsed: 16578.315 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 14250000. Time Elapsed: 16631.808 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 14300000. Time Elapsed: 16688.619 s. Mean Reward: 0.000. Mean Group Reward: 39.326. Training.
+[INFO] GWO_Defender. Step: 14350000. Time Elapsed: 16745.646 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 14400000. Time Elapsed: 16803.592 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 14450000. Time Elapsed: 16862.589 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 14500000. Time Elapsed: 16921.800 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-14499972.onnx
+[INFO] GWO_Defender. Step: 14550000. Time Elapsed: 16980.510 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] GWO_Defender. Step: 14600000. Time Elapsed: 17036.912 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 14650000. Time Elapsed: 17094.770 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 14700000. Time Elapsed: 17151.938 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 14750000. Time Elapsed: 17211.346 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 14800000. Time Elapsed: 17269.012 s. Mean Reward: 0.000. Mean Group Reward: 39.978. Training.
+[INFO] GWO_Defender. Step: 14850000. Time Elapsed: 17329.101 s. Mean Reward: 0.000. Mean Group Reward: 39.977. Training.
+[INFO] GWO_Defender. Step: 14900000. Time Elapsed: 17386.294 s. Mean Reward: 0.000. Mean Group Reward: 39.980. Training.
+[INFO] GWO_Defender. Step: 14950000. Time Elapsed: 17444.900 s. Mean Reward: 0.000. Mean Group Reward: 39.976. Training.
+[INFO] GWO_Defender. Step: 15000000. Time Elapsed: 17501.504 s. Mean Reward: 0.000. Mean Group Reward: 39.979. Training.
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-14999938.onnx
+[INFO] Exported results/GWO_2/GWO_Defender/GWO_Defender-15000066.onnx
+[INFO] Copied results/GWO_2/GWO_Defender/GWO_Defender-15000066.onnx to results/GWO_2/GWO_Defender.onnx.
+

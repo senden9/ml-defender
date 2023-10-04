@@ -1,0 +1,47 @@
+{
+    "SlimeMouldAgentDefener": {
+        "checkpoints": [
+            {
+                "steps": 499964,
+                "file_path": "results/slimemould_2/SlimeMouldAgentDefener/SlimeMouldAgentDefener-499964.onnx",
+                "reward": 0.0,
+                "creation_time": 1682339614.0138416,
+                "auxillary_file_paths": [
+                    "results/slimemould_2/SlimeMouldAgentDefener/SlimeMouldAgentDefener-499964.pt"
+                ]
+            },
+            {
+                "steps": 999966,
+                "file_path": "results/slimemould_2/SlimeMouldAgentDefener/SlimeMouldAgentDefener-999966.onnx",
+                "reward": 0.0,
+                "creation_time": 1682340468.5217414,
+                "auxillary_file_paths": [
+                    "results/slimemould_2/SlimeMouldAgentDefener/SlimeMouldAgentDefener-999966.pt"
+                ]
+            },
+            {
+                "steps": 1239642,
+                "file_path": "results/slimemould_2/SlimeMouldAgentDefener/SlimeMouldAgentDefener-1239642.onnx",
+                "reward": 0.0,
+                "creation_time": 1682341075.5112348,
+                "auxillary_file_paths": [
+                    "results/slimemould_2/SlimeMouldAgentDefener/SlimeMouldAgentDefener-1239642.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1239642,
+            "file_path": "results/slimemould_2/SlimeMouldAgentDefener.onnx",
+            "reward": 0.0,
+            "creation_time": 1682341075.5112348,
+            "auxillary_file_paths": [
+                "results/slimemould_2/SlimeMouldAgentDefener/SlimeMouldAgentDefener-1239642.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.11.0+cpu"
+    }
+}

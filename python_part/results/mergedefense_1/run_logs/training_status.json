@@ -1,0 +1,110 @@
+{
+    "MLMergeDefender": {
+        "checkpoints": [
+            {
+                "steps": 11499994,
+                "file_path": "results/mergedefense_1/MLMergeDefender/MLMergeDefender-11499994.onnx",
+                "reward": 0.0,
+                "creation_time": 1683659118.5646963,
+                "auxillary_file_paths": [
+                    "results/mergedefense_1/MLMergeDefender/MLMergeDefender-11499994.pt"
+                ]
+            },
+            {
+                "steps": 11999972,
+                "file_path": "results/mergedefense_1/MLMergeDefender/MLMergeDefender-11999972.onnx",
+                "reward": null,
+                "creation_time": 1683659844.6885786,
+                "auxillary_file_paths": [
+                    "results/mergedefense_1/MLMergeDefender/MLMergeDefender-11999972.pt"
+                ]
+            },
+            {
+                "steps": 12499994,
+                "file_path": "results/mergedefense_1/MLMergeDefender/MLMergeDefender-12499994.onnx",
+                "reward": 0.0,
+                "creation_time": 1683660604.0682328,
+                "auxillary_file_paths": [
+                    "results/mergedefense_1/MLMergeDefender/MLMergeDefender-12499994.pt"
+                ]
+            },
+            {
+                "steps": 12999872,
+                "file_path": "results/mergedefense_1/MLMergeDefender/MLMergeDefender-12999872.onnx",
+                "reward": 0.0,
+                "creation_time": 1683661343.104027,
+                "auxillary_file_paths": [
+                    "results/mergedefense_1/MLMergeDefender/MLMergeDefender-12999872.pt"
+                ]
+            },
+            {
+                "steps": 13499990,
+                "file_path": "results/mergedefense_1/MLMergeDefender/MLMergeDefender-13499990.onnx",
+                "reward": 0.0,
+                "creation_time": 1683662084.848526,
+                "auxillary_file_paths": [
+                    "results/mergedefense_1/MLMergeDefender/MLMergeDefender-13499990.pt"
+                ]
+            },
+            {
+                "steps": 13999966,
+                "file_path": "results/mergedefense_1/MLMergeDefender/MLMergeDefender-13999966.onnx",
+                "reward": 0.0,
+                "creation_time": 1683662831.952098,
+                "auxillary_file_paths": [
+                    "results/mergedefense_1/MLMergeDefender/MLMergeDefender-13999966.pt"
+                ]
+            },
+            {
+                "steps": 14499986,
+                "file_path": "results/mergedefense_1/MLMergeDefender/MLMergeDefender-14499986.onnx",
+                "reward": 0.0,
+                "creation_time": 1683663566.7271442,
+                "auxillary_file_paths": [
+                    "results/mergedefense_1/MLMergeDefender/MLMergeDefender-14499986.pt"
+                ]
+            },
+            {
+                "steps": 14999952,
+                "file_path": "results/mergedefense_1/MLMergeDefender/MLMergeDefender-14999952.onnx",
+                "reward": 0.0,
+                "creation_time": 1683664307.6506321,
+                "auxillary_file_paths": [
+                    "results/mergedefense_1/MLMergeDefender/MLMergeDefender-14999952.pt"
+                ]
+            },
+            {
+                "steps": 15499948,
+                "file_path": "results/mergedefense_1/MLMergeDefender/MLMergeDefender-15499948.onnx",
+                "reward": 0.0,
+                "creation_time": 1683665043.7048628,
+                "auxillary_file_paths": [
+                    "results/mergedefense_1/MLMergeDefender/MLMergeDefender-15499948.pt"
+                ]
+            },
+            {
+                "steps": 15500076,
+                "file_path": "results/mergedefense_1/MLMergeDefender/MLMergeDefender-15500076.onnx",
+                "reward": 0.0,
+                "creation_time": 1683665043.7617033,
+                "auxillary_file_paths": [
+                    "results/mergedefense_1/MLMergeDefender/MLMergeDefender-15500076.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 15500076,
+            "file_path": "results/mergedefense_1/MLMergeDefender.onnx",
+            "reward": 0.0,
+            "creation_time": 1683665043.7617033,
+            "auxillary_file_paths": [
+                "results/mergedefense_1/MLMergeDefender/MLMergeDefender-15500076.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.11.0+cpu"
+    }
+}

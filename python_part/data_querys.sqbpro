@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="data.db" readonly="1" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1220"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="0" parent="0"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,8:mainmy_table"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="my_table" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="132"/><column index="2" value="89"/><column index="3" value="108"/><column index="4" value="96"/><column index="5" value="91"/><column index="6" value="92"/><column index="7" value="97"/><column index="8" value="80"/><column index="9" value="122"/><column index="10" value="122"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">SELECT * from my_table
+WHERE my_table.WhoWon = &quot;AttackerWon&quot;;
+</sql><sql name="SQL 2">SELECT EnvironmentType, COUNT(*) AS Frequency
+FROM my_table
+GROUP BY EnvironmentType;</sql><sql name="SQL 3">SELECT WhoWon, COUNT(*) AS Frequency
+FROM my_table
+GROUP BY WhoWon;</sql><sql name="SQL 4">SELECT EnvironmentType, WhoWon, COUNT(*) AS Frequency
+FROM my_table
+GROUP BY EnvironmentType, WhoWon;</sql><sql name="SQL 6">SELECT EnvironmentType, MaxRounds, WhoWon, LineOfSight, Count(*) FROM my_table
+WHERE NrDefenders = 0
+GROUP BY WhoWon, MaxRounds, EnvironmentType, LineOfSight
+ORDER By WhoWon;</sql><sql name="SQL 7">SELECT
+  EnvironmentType,
+  MaxRounds,
+  LineOfSight,
+  COUNT(CASE WHEN WhoWon = 'AttackerWon' THEN 1 END) AS AttackerWonCount,
+  COUNT(CASE WHEN WhoWon = 'DefenderWon' THEN 1 END) AS DefenderWonCount,
+  ROUND(CAST(COUNT(CASE WHEN WhoWon = 'AttackerWon' THEN 1 END) AS REAL) / COUNT(CASE WHEN WhoWon = 'DefenderWon' THEN 1 END), 3) AS WinRatio,
+  COUNT(CASE WHEN WhoWon = 'AttackerWon' THEN 1 END) + COUNT(CASE WHEN WhoWon = 'DefenderWon' THEN 1 END) AS WinSum /* Just as check. Must be the same for all rows if our data set is complete and our query is correct.*/
+FROM
+  my_table
+WHERE
+  NrDefenders = 0
+GROUP BY
+  MaxRounds,
+  EnvironmentType,
+  LineOfSight
+ORDER BY
+  WinRatio DESC;
+</sql><sql name="SQL 8">SELECT
+  EnvironmentType,
+  MaxRounds,
+  LineOfSight,
+  NrAttackers,
+  MaxSpeed,
+  AreaSideLength,
+  TargetHitRadius,
+  COUNT(CASE WHEN WhoWon = 'AttackerWon' THEN 1 END) AS AttackerWonCount,
+  COUNT(CASE WHEN WhoWon = 'DefenderWon' THEN 1 END) AS DefenderWonCount,
+  ROUND(CAST(COUNT(CASE WHEN WhoWon = 'AttackerWon' THEN 1 END) AS REAL) / (COUNT(CASE WHEN WhoWon = 'DefenderWon' THEN 1 END) + COUNT(CASE WHEN WhoWon = 'AttackerWon' THEN 1 END)), 4) AS WinRatio,
+  COUNT(CASE WHEN WhoWon = 'AttackerWon' THEN 1 END) + COUNT(CASE WHEN WhoWon = 'DefenderWon' THEN 1 END) AS WinSum /* Just as check. Must be the same for all rows if our data set is complete and our query is correct.*/
+FROM
+  my_table
+WHERE
+  NrDefenders = 0
+GROUP BY
+  MaxRounds,
+  EnvironmentType,
+  LineOfSight,
+  NrAttackers,
+  MaxSpeed,
+  AreaSideLength,
+  TargetHitRadius
+ORDER BY
+  WinRatio DESC;
+</sql><sql name="SQL 9">SELECT * FROM my_table
+WHERE EnvironmentType=&quot;SMA&quot; AND MaxRounds=10000 AND LineOfSight=200.0 AND NrDefenders=0;</sql><current_tab id="6"/></tab_sql></sqlb_project>

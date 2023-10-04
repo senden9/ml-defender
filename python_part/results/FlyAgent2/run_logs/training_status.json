@@ -1,0 +1,47 @@
+{
+    "FlyAgent": {
+        "checkpoints": [
+            {
+                "steps": 499971,
+                "file_path": "results/FlyAgent2/FlyAgent/FlyAgent-499971.onnx",
+                "reward": null,
+                "creation_time": 1672757364.5906024,
+                "auxillary_file_paths": [
+                    "results/FlyAgent2/FlyAgent/FlyAgent-499971.pt"
+                ]
+            },
+            {
+                "steps": 999984,
+                "file_path": "results/FlyAgent2/FlyAgent/FlyAgent-999984.onnx",
+                "reward": 810.5987892150879,
+                "creation_time": 1672757949.4251657,
+                "auxillary_file_paths": [
+                    "results/FlyAgent2/FlyAgent/FlyAgent-999984.pt"
+                ]
+            },
+            {
+                "steps": 1200029,
+                "file_path": "results/FlyAgent2/FlyAgent/FlyAgent-1200029.onnx",
+                "reward": null,
+                "creation_time": 1672758183.613584,
+                "auxillary_file_paths": [
+                    "results/FlyAgent2/FlyAgent/FlyAgent-1200029.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1200029,
+            "file_path": "results/FlyAgent2/FlyAgent.onnx",
+            "reward": null,
+            "creation_time": 1672758183.613584,
+            "auxillary_file_paths": [
+                "results/FlyAgent2/FlyAgent/FlyAgent-1200029.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.11.0+cpu"
+    }
+}

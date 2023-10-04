@@ -1,0 +1,110 @@
+{
+    "SlimeMouldAgentDefener": {
+        "checkpoints": [
+            {
+                "steps": 11499999,
+                "file_path": "results/slimemould_4/SlimeMouldAgentDefener/SlimeMouldAgentDefener-11499999.onnx",
+                "reward": 0.0,
+                "creation_time": 1682420392.0874135,
+                "auxillary_file_paths": [
+                    "results/slimemould_4/SlimeMouldAgentDefener/SlimeMouldAgentDefener-11499999.pt"
+                ]
+            },
+            {
+                "steps": 11999899,
+                "file_path": "results/slimemould_4/SlimeMouldAgentDefener/SlimeMouldAgentDefener-11999899.onnx",
+                "reward": 0.0,
+                "creation_time": 1682421109.4128888,
+                "auxillary_file_paths": [
+                    "results/slimemould_4/SlimeMouldAgentDefener/SlimeMouldAgentDefener-11999899.pt"
+                ]
+            },
+            {
+                "steps": 12499933,
+                "file_path": "results/slimemould_4/SlimeMouldAgentDefener/SlimeMouldAgentDefener-12499933.onnx",
+                "reward": null,
+                "creation_time": 1682421840.5776615,
+                "auxillary_file_paths": [
+                    "results/slimemould_4/SlimeMouldAgentDefener/SlimeMouldAgentDefener-12499933.pt"
+                ]
+            },
+            {
+                "steps": 12999879,
+                "file_path": "results/slimemould_4/SlimeMouldAgentDefener/SlimeMouldAgentDefener-12999879.onnx",
+                "reward": 0.0,
+                "creation_time": 1682422589.7008421,
+                "auxillary_file_paths": [
+                    "results/slimemould_4/SlimeMouldAgentDefener/SlimeMouldAgentDefener-12999879.pt"
+                ]
+            },
+            {
+                "steps": 13499881,
+                "file_path": "results/slimemould_4/SlimeMouldAgentDefener/SlimeMouldAgentDefener-13499881.onnx",
+                "reward": 0.0,
+                "creation_time": 1682423331.1118162,
+                "auxillary_file_paths": [
+                    "results/slimemould_4/SlimeMouldAgentDefener/SlimeMouldAgentDefener-13499881.pt"
+                ]
+            },
+            {
+                "steps": 13999978,
+                "file_path": "results/slimemould_4/SlimeMouldAgentDefener/SlimeMouldAgentDefener-13999978.onnx",
+                "reward": 0.0,
+                "creation_time": 1682424056.0779393,
+                "auxillary_file_paths": [
+                    "results/slimemould_4/SlimeMouldAgentDefener/SlimeMouldAgentDefener-13999978.pt"
+                ]
+            },
+            {
+                "steps": 14499934,
+                "file_path": "results/slimemould_4/SlimeMouldAgentDefener/SlimeMouldAgentDefener-14499934.onnx",
+                "reward": 0.0,
+                "creation_time": 1682424765.513381,
+                "auxillary_file_paths": [
+                    "results/slimemould_4/SlimeMouldAgentDefener/SlimeMouldAgentDefener-14499934.pt"
+                ]
+            },
+            {
+                "steps": 14999886,
+                "file_path": "results/slimemould_4/SlimeMouldAgentDefener/SlimeMouldAgentDefener-14999886.onnx",
+                "reward": 0.0,
+                "creation_time": 1682425476.86909,
+                "auxillary_file_paths": [
+                    "results/slimemould_4/SlimeMouldAgentDefener/SlimeMouldAgentDefener-14999886.pt"
+                ]
+            },
+            {
+                "steps": 15499989,
+                "file_path": "results/slimemould_4/SlimeMouldAgentDefener/SlimeMouldAgentDefener-15499989.onnx",
+                "reward": 0.0,
+                "creation_time": 1682426191.22501,
+                "auxillary_file_paths": [
+                    "results/slimemould_4/SlimeMouldAgentDefener/SlimeMouldAgentDefener-15499989.pt"
+                ]
+            },
+            {
+                "steps": 15500117,
+                "file_path": "results/slimemould_4/SlimeMouldAgentDefener/SlimeMouldAgentDefener-15500117.onnx",
+                "reward": 0.0,
+                "creation_time": 1682426191.2775059,
+                "auxillary_file_paths": [
+                    "results/slimemould_4/SlimeMouldAgentDefener/SlimeMouldAgentDefener-15500117.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 15500117,
+            "file_path": "results/slimemould_4/SlimeMouldAgentDefener.onnx",
+            "reward": 0.0,
+            "creation_time": 1682426191.2775059,
+            "auxillary_file_paths": [
+                "results/slimemould_4/SlimeMouldAgentDefener/SlimeMouldAgentDefener-15500117.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.11.0+cpu"
+    }
+}

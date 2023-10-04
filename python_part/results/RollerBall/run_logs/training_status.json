@@ -1,0 +1,56 @@
+{
+    "RollerBall": {
+        "checkpoints": [
+            {
+                "steps": 41445,
+                "file_path": "results/RollerBall/RollerBall/RollerBall-41445.onnx",
+                "reward": 0.8,
+                "creation_time": 1672682102.232245,
+                "auxillary_file_paths": [
+                    "results/RollerBall/RollerBall/RollerBall-41445.pt"
+                ]
+            },
+            {
+                "steps": 86340,
+                "file_path": "results/RollerBall/RollerBall/RollerBall-86340.onnx",
+                "reward": 1.0,
+                "creation_time": 1672682349.0177696,
+                "auxillary_file_paths": [
+                    "results/RollerBall/RollerBall/RollerBall-86340.pt"
+                ]
+            },
+            {
+                "steps": 499995,
+                "file_path": "results/RollerBall/RollerBall/RollerBall-499995.onnx",
+                "reward": 1.0,
+                "creation_time": 1672690058.1469038,
+                "auxillary_file_paths": [
+                    "results/RollerBall/RollerBall/RollerBall-499995.pt"
+                ]
+            },
+            {
+                "steps": 500001,
+                "file_path": "results/RollerBall/RollerBall/RollerBall-500001.onnx",
+                "reward": 1.0,
+                "creation_time": 1672690058.1724796,
+                "auxillary_file_paths": [
+                    "results/RollerBall/RollerBall/RollerBall-500001.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500001,
+            "file_path": "results/RollerBall/RollerBall.onnx",
+            "reward": 1.0,
+            "creation_time": 1672690058.1724796,
+            "auxillary_file_paths": [
+                "results/RollerBall/RollerBall/RollerBall-500001.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.11.0+cpu"
+    }
+}

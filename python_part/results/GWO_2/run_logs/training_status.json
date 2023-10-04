@@ -1,0 +1,110 @@
+{
+    "GWO_Defender": {
+        "checkpoints": [
+            {
+                "steps": 10999970,
+                "file_path": "results/GWO_2/GWO_Defender/GWO_Defender-10999970.onnx",
+                "reward": 0.0,
+                "creation_time": 1673468499.3819804,
+                "auxillary_file_paths": [
+                    "results/GWO_2/GWO_Defender/GWO_Defender-10999970.pt"
+                ]
+            },
+            {
+                "steps": 11499998,
+                "file_path": "results/GWO_2/GWO_Defender/GWO_Defender-11499998.onnx",
+                "reward": 0.0,
+                "creation_time": 1673469084.7420237,
+                "auxillary_file_paths": [
+                    "results/GWO_2/GWO_Defender/GWO_Defender-11499998.pt"
+                ]
+            },
+            {
+                "steps": 11999986,
+                "file_path": "results/GWO_2/GWO_Defender/GWO_Defender-11999986.onnx",
+                "reward": 0.0,
+                "creation_time": 1673469662.5546875,
+                "auxillary_file_paths": [
+                    "results/GWO_2/GWO_Defender/GWO_Defender-11999986.pt"
+                ]
+            },
+            {
+                "steps": 12499976,
+                "file_path": "results/GWO_2/GWO_Defender/GWO_Defender-12499976.onnx",
+                "reward": 0.0,
+                "creation_time": 1673470234.0345101,
+                "auxillary_file_paths": [
+                    "results/GWO_2/GWO_Defender/GWO_Defender-12499976.pt"
+                ]
+            },
+            {
+                "steps": 12999952,
+                "file_path": "results/GWO_2/GWO_Defender/GWO_Defender-12999952.onnx",
+                "reward": 0.0,
+                "creation_time": 1673470805.7084792,
+                "auxillary_file_paths": [
+                    "results/GWO_2/GWO_Defender/GWO_Defender-12999952.pt"
+                ]
+            },
+            {
+                "steps": 13499942,
+                "file_path": "results/GWO_2/GWO_Defender/GWO_Defender-13499942.onnx",
+                "reward": 0.0,
+                "creation_time": 1673471386.3146365,
+                "auxillary_file_paths": [
+                    "results/GWO_2/GWO_Defender/GWO_Defender-13499942.pt"
+                ]
+            },
+            {
+                "steps": 13999970,
+                "file_path": "results/GWO_2/GWO_Defender/GWO_Defender-13999970.onnx",
+                "reward": 0.0,
+                "creation_time": 1673471959.2742093,
+                "auxillary_file_paths": [
+                    "results/GWO_2/GWO_Defender/GWO_Defender-13999970.pt"
+                ]
+            },
+            {
+                "steps": 14499972,
+                "file_path": "results/GWO_2/GWO_Defender/GWO_Defender-14499972.onnx",
+                "reward": null,
+                "creation_time": 1673472535.2740664,
+                "auxillary_file_paths": [
+                    "results/GWO_2/GWO_Defender/GWO_Defender-14499972.pt"
+                ]
+            },
+            {
+                "steps": 14999938,
+                "file_path": "results/GWO_2/GWO_Defender/GWO_Defender-14999938.onnx",
+                "reward": 0.0,
+                "creation_time": 1673473114.9787345,
+                "auxillary_file_paths": [
+                    "results/GWO_2/GWO_Defender/GWO_Defender-14999938.pt"
+                ]
+            },
+            {
+                "steps": 15000066,
+                "file_path": "results/GWO_2/GWO_Defender/GWO_Defender-15000066.onnx",
+                "reward": 0.0,
+                "creation_time": 1673473115.0223682,
+                "auxillary_file_paths": [
+                    "results/GWO_2/GWO_Defender/GWO_Defender-15000066.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 15000066,
+            "file_path": "results/GWO_2/GWO_Defender.onnx",
+            "reward": 0.0,
+            "creation_time": 1673473115.0223682,
+            "auxillary_file_paths": [
+                "results/GWO_2/GWO_Defender/GWO_Defender-15000066.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.11.0+cpu"
+    }
+}

@@ -1,0 +1,400 @@
+(venv) ➜  python_part git:(main) ✗ PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python mlagents-learn config/slimeMould.yaml --run-id=slimemould_3
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+        
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 1.11.0+cpu
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Connected to Unity environment with package version 2.0.1 and communication version 1.5.0
+[INFO] Connected new brain: SlimeMouldAgentDefener?team=0
+[INFO] Hyperparameters for behavior name SlimeMouldAgentDefener: 
+	trainer_type:	poca
+	hyperparameters:	
+	  batch_size:	1024
+	  buffer_size:	10240
+	  learning_rate:	0.0003
+	  beta:	0.01
+	  epsilon:	0.2
+	  lambd:	0.95
+	  num_epoch:	3
+	  learning_rate_schedule:	constant
+	  beta_schedule:	constant
+	  epsilon_schedule:	constant
+	network_settings:	
+	  normalize:	False
+	  hidden_units:	200
+	  num_layers:	2
+	  vis_encode_type:	simple
+	  memory:	None
+	  goal_conditioning_type:	hyper
+	  deterministic:	False
+	reward_signals:	
+	  extrinsic:	
+	    gamma:	0.99
+	    strength:	1.0
+	    network_settings:	
+	      normalize:	False
+	      hidden_units:	128
+	      num_layers:	2
+	      vis_encode_type:	simple
+	      memory:	None
+	      goal_conditioning_type:	hyper
+	      deterministic:	False
+	init_path:	None
+	keep_checkpoints:	10
+	checkpoint_interval:	500000
+	max_steps:	15000000
+	time_horizon:	64
+	summary_freq:	50000
+	threaded:	False
+	self_play:	None
+	behavioral_cloning:	None
+[INFO] SlimeMouldAgentDefener. Step: 50000. Time Elapsed: 68.084 s. Mean Reward: 0.000. Mean Group Reward: 20.411. Training.
+[INFO] SlimeMouldAgentDefener. Step: 100000. Time Elapsed: 135.298 s. Mean Reward: 0.000. Mean Group Reward: 22.545. Training.
+[INFO] SlimeMouldAgentDefener. Step: 150000. Time Elapsed: 201.368 s. Mean Reward: 0.000. Mean Group Reward: 22.543. Training.
+[INFO] SlimeMouldAgentDefener. Step: 200000. Time Elapsed: 267.582 s. Mean Reward: 0.000. Mean Group Reward: 22.551. Training.
+[INFO] SlimeMouldAgentDefener. Step: 250000. Time Elapsed: 333.424 s. Mean Reward: 0.000. Mean Group Reward: 22.583. Training.
+[INFO] SlimeMouldAgentDefener. Step: 300000. Time Elapsed: 396.680 s. Mean Reward: 0.000. Mean Group Reward: 22.981. Training.
+[INFO] SlimeMouldAgentDefener. Step: 350000. Time Elapsed: 463.570 s. Mean Reward: 0.000. Mean Group Reward: 21.779. Training.
+[INFO] SlimeMouldAgentDefener. Step: 400000. Time Elapsed: 530.535 s. Mean Reward: 0.000. Mean Group Reward: 22.125. Training.
+[INFO] SlimeMouldAgentDefener. Step: 450000. Time Elapsed: 595.413 s. Mean Reward: 0.000. Mean Group Reward: 21.755. Training.
+[INFO] SlimeMouldAgentDefener. Step: 500000. Time Elapsed: 659.718 s. Mean Reward: 0.000. Mean Group Reward: 22.563. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-499950.onnx
+[INFO] SlimeMouldAgentDefener. Step: 550000. Time Elapsed: 726.447 s. Mean Reward: 0.000. Mean Group Reward: 21.408. Training.
+[INFO] SlimeMouldAgentDefener. Step: 600000. Time Elapsed: 789.979 s. Mean Reward: 0.000. Mean Group Reward: 22.979. Training.
+[INFO] SlimeMouldAgentDefener. Step: 650000. Time Elapsed: 854.758 s. Mean Reward: 0.000. Mean Group Reward: 21.068. Training.
+[INFO] SlimeMouldAgentDefener. Step: 700000. Time Elapsed: 919.948 s. Mean Reward: 0.000. Mean Group Reward: 22.571. Training.
+[INFO] SlimeMouldAgentDefener. Step: 750000. Time Elapsed: 984.826 s. Mean Reward: 0.000. Mean Group Reward: 22.544. Training.
+[INFO] SlimeMouldAgentDefener. Step: 800000. Time Elapsed: 1050.682 s. Mean Reward: 0.000. Mean Group Reward: 22.206. Training.
+[INFO] SlimeMouldAgentDefener. Step: 850000. Time Elapsed: 1117.186 s. Mean Reward: 0.000. Mean Group Reward: 22.553. Training.
+[INFO] SlimeMouldAgentDefener. Step: 900000. Time Elapsed: 1183.110 s. Mean Reward: 0.000. Mean Group Reward: 22.179. Training.
+[INFO] SlimeMouldAgentDefener. Step: 950000. Time Elapsed: 1245.964 s. Mean Reward: 0.000. Mean Group Reward: 21.786. Training.
+[INFO] SlimeMouldAgentDefener. Step: 1000000. Time Elapsed: 1312.067 s. Mean Reward: 0.000. Mean Group Reward: 22.654. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-999950.onnx
+[INFO] SlimeMouldAgentDefener. Step: 1050000. Time Elapsed: 1377.847 s. Mean Reward: 0.000. Mean Group Reward: 21.730. Training.
+[INFO] SlimeMouldAgentDefener. Step: 1100000. Time Elapsed: 1443.620 s. Mean Reward: 0.000. Mean Group Reward: 21.809. Training.
+[INFO] SlimeMouldAgentDefener. Step: 1150000. Time Elapsed: 1509.372 s. Mean Reward: 0.000. Mean Group Reward: 22.132. Training.
+[INFO] SlimeMouldAgentDefener. Step: 1200000. Time Elapsed: 1574.765 s. Mean Reward: 0.000. Mean Group Reward: 21.867. Training.
+[INFO] SlimeMouldAgentDefener. Step: 1250000. Time Elapsed: 1638.130 s. Mean Reward: 0.000. Mean Group Reward: 22.166. Training.
+[INFO] SlimeMouldAgentDefener. Step: 1300000. Time Elapsed: 1704.388 s. Mean Reward: 0.000. Mean Group Reward: 21.338. Training.
+[INFO] SlimeMouldAgentDefener. Step: 1350000. Time Elapsed: 1770.197 s. Mean Reward: 0.000. Mean Group Reward: 20.355. Training.
+[INFO] SlimeMouldAgentDefener. Step: 1400000. Time Elapsed: 1836.308 s. Mean Reward: 0.000. Mean Group Reward: 22.176. Training.
+[INFO] SlimeMouldAgentDefener. Step: 1450000. Time Elapsed: 1902.474 s. Mean Reward: 0.000. Mean Group Reward: 22.136. Training.
+[INFO] SlimeMouldAgentDefener. Step: 1500000. Time Elapsed: 1967.954 s. Mean Reward: 0.000. Mean Group Reward: 21.398. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-1499958.onnx
+[INFO] SlimeMouldAgentDefener. Step: 1550000. Time Elapsed: 2033.617 s. Mean Reward: 0.000. Mean Group Reward: 22.175. Training.
+[INFO] SlimeMouldAgentDefener. Step: 1600000. Time Elapsed: 2096.546 s. Mean Reward: 0.000. Mean Group Reward: 22.155. Training.
+[INFO] SlimeMouldAgentDefener. Step: 1650000. Time Elapsed: 2161.376 s. Mean Reward: 0.000. Mean Group Reward: 22.574. Training.
+[INFO] SlimeMouldAgentDefener. Step: 1700000. Time Elapsed: 2227.383 s. Mean Reward: 0.000. Mean Group Reward: 22.981. Training.
+[INFO] SlimeMouldAgentDefener. Step: 1750000. Time Elapsed: 2293.010 s. Mean Reward: 0.000. Mean Group Reward: 22.172. Training.
+[INFO] SlimeMouldAgentDefener. Step: 1800000. Time Elapsed: 2358.840 s. Mean Reward: 0.000. Mean Group Reward: 21.778. Training.
+[INFO] SlimeMouldAgentDefener. Step: 1850000. Time Elapsed: 2424.608 s. Mean Reward: 0.000. Mean Group Reward: 22.180. Training.
+[INFO] SlimeMouldAgentDefener. Step: 1900000. Time Elapsed: 2490.061 s. Mean Reward: 0.000. Mean Group Reward: 22.172. Training.
+[INFO] SlimeMouldAgentDefener. Step: 1950000. Time Elapsed: 2552.482 s. Mean Reward: 0.000. Mean Group Reward: 22.196. Training.
+[INFO] SlimeMouldAgentDefener. Step: 2000000. Time Elapsed: 2618.011 s. Mean Reward: 0.000. Mean Group Reward: 21.811. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-1999954.onnx
+[INFO] SlimeMouldAgentDefener. Step: 2050000. Time Elapsed: 2683.807 s. Mean Reward: 0.000. Mean Group Reward: 21.809. Training.
+[INFO] SlimeMouldAgentDefener. Step: 2100000. Time Elapsed: 2748.986 s. Mean Reward: 0.000. Mean Group Reward: 22.980. Training.
+[INFO] SlimeMouldAgentDefener. Step: 2150000. Time Elapsed: 2815.124 s. Mean Reward: 0.000. Mean Group Reward: 21.488. Training.
+[INFO] SlimeMouldAgentDefener. Step: 2200000. Time Elapsed: 2880.368 s. Mean Reward: 0.000. Mean Group Reward: 22.143. Training.
+[INFO] SlimeMouldAgentDefener. Step: 2250000. Time Elapsed: 2945.971 s. Mean Reward: 0.000. Mean Group Reward: 22.571. Training.
+[INFO] SlimeMouldAgentDefener. Step: 2300000. Time Elapsed: 3008.126 s. Mean Reward: 0.000. Mean Group Reward: 22.574. Training.
+[INFO] SlimeMouldAgentDefener. Step: 2350000. Time Elapsed: 3073.810 s. Mean Reward: 0.000. Mean Group Reward: 21.723. Training.
+[INFO] SlimeMouldAgentDefener. Step: 2400000. Time Elapsed: 3139.607 s. Mean Reward: 0.000. Mean Group Reward: 22.575. Training.
+[INFO] SlimeMouldAgentDefener. Step: 2450000. Time Elapsed: 3205.156 s. Mean Reward: 0.000. Mean Group Reward: 22.553. Training.
+[INFO] SlimeMouldAgentDefener. Step: 2500000. Time Elapsed: 3269.958 s. Mean Reward: 0.000. Mean Group Reward: 21.027. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-2499970.onnx
+[INFO] SlimeMouldAgentDefener. Step: 2550000. Time Elapsed: 3336.151 s. Mean Reward: 0.000. Mean Group Reward: 22.137. Training.
+[INFO] SlimeMouldAgentDefener. Step: 2600000. Time Elapsed: 3399.375 s. Mean Reward: 0.000. Mean Group Reward: 22.200. Training.
+[INFO] SlimeMouldAgentDefener. Step: 2650000. Time Elapsed: 3465.395 s. Mean Reward: 0.000. Mean Group Reward: 21.751. Training.
+[INFO] SlimeMouldAgentDefener. Step: 2700000. Time Elapsed: 3531.249 s. Mean Reward: 0.000. Mean Group Reward: 21.755. Training.
+[INFO] SlimeMouldAgentDefener. Step: 2750000. Time Elapsed: 3596.841 s. Mean Reward: 0.000. Mean Group Reward: 21.347. Training.
+[INFO] SlimeMouldAgentDefener. Step: 2800000. Time Elapsed: 3662.293 s. Mean Reward: 0.000. Mean Group Reward: 22.563. Training.
+[INFO] SlimeMouldAgentDefener. Step: 2850000. Time Elapsed: 3728.424 s. Mean Reward: 0.000. Mean Group Reward: 22.136. Training.
+[INFO] SlimeMouldAgentDefener. Step: 2900000. Time Elapsed: 3793.956 s. Mean Reward: 0.000. Mean Group Reward: 22.143. Training.
+[INFO] SlimeMouldAgentDefener. Step: 2950000. Time Elapsed: 3855.957 s. Mean Reward: 0.000. Mean Group Reward: 21.739. Training.
+[INFO] SlimeMouldAgentDefener. Step: 3000000. Time Elapsed: 3921.898 s. Mean Reward: 0.000. Mean Group Reward: 22.191. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-2999980.onnx
+[INFO] SlimeMouldAgentDefener. Step: 3050000. Time Elapsed: 3987.770 s. Mean Reward: 0.000. Mean Group Reward: 22.564. Training.
+[INFO] SlimeMouldAgentDefener. Step: 3100000. Time Elapsed: 4053.108 s. Mean Reward: 0.000. Mean Group Reward: 22.150. Training.
+[INFO] SlimeMouldAgentDefener. Step: 3150000. Time Elapsed: 4118.730 s. Mean Reward: 0.000. Mean Group Reward: 21.396. Training.
+[INFO] SlimeMouldAgentDefener. Step: 3200000. Time Elapsed: 4184.780 s. Mean Reward: 0.000. Mean Group Reward: 21.769. Training.
+[INFO] SlimeMouldAgentDefener. Step: 3250000. Time Elapsed: 4247.889 s. Mean Reward: 0.000. Mean Group Reward: 22.564. Training.
+[INFO] SlimeMouldAgentDefener. Step: 3300000. Time Elapsed: 4314.266 s. Mean Reward: 0.000. Mean Group Reward: 22.181. Training.
+[INFO] SlimeMouldAgentDefener. Step: 3350000. Time Elapsed: 4381.571 s. Mean Reward: 0.000. Mean Group Reward: 22.588. Training.
+[INFO] SlimeMouldAgentDefener. Step: 3400000. Time Elapsed: 4447.087 s. Mean Reward: 0.000. Mean Group Reward: 21.382. Training.
+[INFO] SlimeMouldAgentDefener. Step: 3450000. Time Elapsed: 4512.318 s. Mean Reward: 0.000. Mean Group Reward: 22.149. Training.
+[INFO] SlimeMouldAgentDefener. Step: 3500000. Time Elapsed: 4575.017 s. Mean Reward: 0.000. Mean Group Reward: 21.395. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-3499952.onnx
+[INFO] SlimeMouldAgentDefener. Step: 3550000. Time Elapsed: 4638.968 s. Mean Reward: 0.000. Mean Group Reward: 22.555. Training.
+[INFO] SlimeMouldAgentDefener. Step: 3600000. Time Elapsed: 4701.347 s. Mean Reward: 0.000. Mean Group Reward: 22.979. Training.
+[INFO] SlimeMouldAgentDefener. Step: 3650000. Time Elapsed: 4761.628 s. Mean Reward: 0.000. Mean Group Reward: 21.744. Training.
+[INFO] SlimeMouldAgentDefener. Step: 3700000. Time Elapsed: 4824.946 s. Mean Reward: 0.000. Mean Group Reward: 21.850. Training.
+[INFO] SlimeMouldAgentDefener. Step: 3750000. Time Elapsed: 4888.563 s. Mean Reward: 0.000. Mean Group Reward: 22.570. Training.
+[INFO] SlimeMouldAgentDefener. Step: 3800000. Time Elapsed: 4952.248 s. Mean Reward: 0.000. Mean Group Reward: 22.980. Training.
+[INFO] SlimeMouldAgentDefener. Step: 3850000. Time Elapsed: 5014.031 s. Mean Reward: 0.000. Mean Group Reward: 22.167. Training.
+[INFO] SlimeMouldAgentDefener. Step: 3900000. Time Elapsed: 5076.769 s. Mean Reward: 0.000. Mean Group Reward: 22.551. Training.
+[INFO] SlimeMouldAgentDefener. Step: 3950000. Time Elapsed: 5140.425 s. Mean Reward: 0.000. Mean Group Reward: 22.135. Training.
+[INFO] SlimeMouldAgentDefener. Step: 4000000. Time Elapsed: 5200.550 s. Mean Reward: 0.000. Mean Group Reward: 21.432. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-3999964.onnx
+[INFO] SlimeMouldAgentDefener. Step: 4050000. Time Elapsed: 5264.004 s. Mean Reward: 0.000. Mean Group Reward: 21.393. Training.
+[INFO] SlimeMouldAgentDefener. Step: 4100000. Time Elapsed: 5327.499 s. Mean Reward: 0.000. Mean Group Reward: 21.807. Training.
+[INFO] SlimeMouldAgentDefener. Step: 4150000. Time Elapsed: 5391.278 s. Mean Reward: 0.000. Mean Group Reward: 22.981. Training.
+[INFO] SlimeMouldAgentDefener. Step: 4200000. Time Elapsed: 5454.497 s. Mean Reward: 0.000. Mean Group Reward: 22.979. Training.
+[INFO] SlimeMouldAgentDefener. Step: 4250000. Time Elapsed: 5517.187 s. Mean Reward: 0.000. Mean Group Reward: 21.791. Training.
+[INFO] SlimeMouldAgentDefener. Step: 4300000. Time Elapsed: 5580.673 s. Mean Reward: 0.000. Mean Group Reward: 22.546. Training.
+[INFO] SlimeMouldAgentDefener. Step: 4350000. Time Elapsed: 5640.915 s. Mean Reward: 0.000. Mean Group Reward: 22.157. Training.
+[INFO] SlimeMouldAgentDefener. Step: 4400000. Time Elapsed: 5703.470 s. Mean Reward: 0.000. Mean Group Reward: 22.545. Training.
+[INFO] SlimeMouldAgentDefener. Step: 4450000. Time Elapsed: 5767.095 s. Mean Reward: 0.000. Mean Group Reward: 22.552. Training.
+[INFO] SlimeMouldAgentDefener. Step: 4500000. Time Elapsed: 5828.820 s. Mean Reward: 0.000. Mean Group Reward: 22.129. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-4499948.onnx
+[INFO] SlimeMouldAgentDefener. Step: 4550000. Time Elapsed: 5891.964 s. Mean Reward: 0.000. Mean Group Reward: 22.167. Training.
+[INFO] SlimeMouldAgentDefener. Step: 4600000. Time Elapsed: 5955.705 s. Mean Reward: 0.000. Mean Group Reward: 22.132. Training.
+[INFO] SlimeMouldAgentDefener. Step: 4650000. Time Elapsed: 6019.396 s. Mean Reward: 0.000. Mean Group Reward: 22.559. Training.
+[INFO] SlimeMouldAgentDefener. Step: 4700000. Time Elapsed: 6079.346 s. Mean Reward: 0.000. Mean Group Reward: 22.547. Training.
+[INFO] SlimeMouldAgentDefener. Step: 4750000. Time Elapsed: 6142.998 s. Mean Reward: 0.000. Mean Group Reward: 22.172. Training.
+[INFO] SlimeMouldAgentDefener. Step: 4800000. Time Elapsed: 6206.365 s. Mean Reward: 0.000. Mean Group Reward: 22.150. Training.
+[INFO] SlimeMouldAgentDefener. Step: 4850000. Time Elapsed: 6269.517 s. Mean Reward: 0.000. Mean Group Reward: 22.980. Training.
+[INFO] SlimeMouldAgentDefener. Step: 4900000. Time Elapsed: 6332.995 s. Mean Reward: 0.000. Mean Group Reward: 22.560. Training.
+[INFO] SlimeMouldAgentDefener. Step: 4950000. Time Elapsed: 6395.810 s. Mean Reward: 0.000. Mean Group Reward: 22.576. Training.
+[INFO] SlimeMouldAgentDefener. Step: 5000000. Time Elapsed: 6456.463 s. Mean Reward: 0.000. Mean Group Reward: 22.143. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-4999962.onnx
+[INFO] SlimeMouldAgentDefener. Step: 5050000. Time Elapsed: 6520.578 s. Mean Reward: 0.000. Mean Group Reward: 21.032. Training.
+[INFO] SlimeMouldAgentDefener. Step: 5100000. Time Elapsed: 6583.541 s. Mean Reward: 0.000. Mean Group Reward: 20.683. Training.
+[INFO] SlimeMouldAgentDefener. Step: 5150000. Time Elapsed: 6646.551 s. Mean Reward: 0.000. Mean Group Reward: 21.799. Training.
+[INFO] SlimeMouldAgentDefener. Step: 5200000. Time Elapsed: 6710.621 s. Mean Reward: 0.000. Mean Group Reward: 21.425. Training.
+[INFO] SlimeMouldAgentDefener. Step: 5250000. Time Elapsed: 6773.953 s. Mean Reward: 0.000. Mean Group Reward: 21.807. Training.
+[INFO] SlimeMouldAgentDefener. Step: 5300000. Time Elapsed: 6837.221 s. Mean Reward: 0.000. Mean Group Reward: 22.150. Training.
+[INFO] SlimeMouldAgentDefener. Step: 5350000. Time Elapsed: 6897.069 s. Mean Reward: 0.000. Mean Group Reward: 22.558. Training.
+[INFO] SlimeMouldAgentDefener. Step: 5400000. Time Elapsed: 6962.626 s. Mean Reward: 0.000. Mean Group Reward: 22.569. Training.
+[INFO] SlimeMouldAgentDefener. Step: 5450000. Time Elapsed: 7029.929 s. Mean Reward: 0.000. Mean Group Reward: 22.161. Training.
+[INFO] SlimeMouldAgentDefener. Step: 5500000. Time Elapsed: 7115.340 s. Mean Reward: 0.000. Mean Group Reward: 22.302. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-5499972.onnx
+[INFO] SlimeMouldAgentDefener. Step: 5550000. Time Elapsed: 7182.807 s. Mean Reward: 0.000. Mean Group Reward: 22.031. Training.
+[INFO] SlimeMouldAgentDefener. Step: 5600000. Time Elapsed: 7250.529 s. Mean Reward: 0.000. Mean Group Reward: 22.020. Training.
+[INFO] SlimeMouldAgentDefener. Step: 5650000. Time Elapsed: 7314.271 s. Mean Reward: 0.000. Mean Group Reward: 22.099. Training.
+[INFO] SlimeMouldAgentDefener. Step: 5700000. Time Elapsed: 7380.856 s. Mean Reward: 0.000. Mean Group Reward: 22.572. Training.
+[INFO] SlimeMouldAgentDefener. Step: 5750000. Time Elapsed: 7449.679 s. Mean Reward: 0.000. Mean Group Reward: 22.981. Training.
+[INFO] SlimeMouldAgentDefener. Step: 5800000. Time Elapsed: 7518.322 s. Mean Reward: 0.000. Mean Group Reward: 22.572. Training.
+[INFO] SlimeMouldAgentDefener. Step: 5850000. Time Elapsed: 7587.936 s. Mean Reward: 0.000. Mean Group Reward: 21.436. Training.
+[INFO] SlimeMouldAgentDefener. Step: 5900000. Time Elapsed: 7655.125 s. Mean Reward: 0.000. Mean Group Reward: 22.555. Training.
+[INFO] SlimeMouldAgentDefener. Step: 5950000. Time Elapsed: 7719.788 s. Mean Reward: 0.000. Mean Group Reward: 22.154. Training.
+[INFO] SlimeMouldAgentDefener. Step: 6000000. Time Elapsed: 7788.824 s. Mean Reward: 0.000. Mean Group Reward: 22.171. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-5999942.onnx
+[INFO] SlimeMouldAgentDefener. Step: 6050000. Time Elapsed: 7855.267 s. Mean Reward: 0.000. Mean Group Reward: 21.243. Training.
+[INFO] SlimeMouldAgentDefener. Step: 6100000. Time Elapsed: 7921.238 s. Mean Reward: 0.000. Mean Group Reward: 22.139. Training.
+[INFO] SlimeMouldAgentDefener. Step: 6150000. Time Elapsed: 7989.004 s. Mean Reward: 0.000. Mean Group Reward: 21.558. Training.
+[INFO] SlimeMouldAgentDefener. Step: 6200000. Time Elapsed: 8054.436 s. Mean Reward: 0.000. Mean Group Reward: 22.711. Training.
+[INFO] SlimeMouldAgentDefener. Step: 6250000. Time Elapsed: 8116.473 s. Mean Reward: 0.000. Mean Group Reward: 20.936. Training.
+[INFO] SlimeMouldAgentDefener. Step: 6300000. Time Elapsed: 8182.897 s. Mean Reward: 0.000. Mean Group Reward: 20.999. Training.
+[INFO] SlimeMouldAgentDefener. Step: 6350000. Time Elapsed: 8251.379 s. Mean Reward: 0.000. Mean Group Reward: 20.836. Training.
+[INFO] SlimeMouldAgentDefener. Step: 6400000. Time Elapsed: 8318.548 s. Mean Reward: 0.000. Mean Group Reward: 21.535. Training.
+[INFO] SlimeMouldAgentDefener. Step: 6450000. Time Elapsed: 8386.259 s. Mean Reward: 0.000. Mean Group Reward: 20.044. Training.
+[INFO] SlimeMouldAgentDefener. Step: 6500000. Time Elapsed: 8453.759 s. Mean Reward: 0.000. Mean Group Reward: 21.007. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-6499938.onnx
+[INFO] SlimeMouldAgentDefener. Step: 6550000. Time Elapsed: 8519.200 s. Mean Reward: 0.000. Mean Group Reward: 20.784. Training.
+[INFO] SlimeMouldAgentDefener. Step: 6600000. Time Elapsed: 8583.969 s. Mean Reward: 0.000. Mean Group Reward: 22.713. Training.
+[INFO] SlimeMouldAgentDefener. Step: 6650000. Time Elapsed: 8652.047 s. Mean Reward: 0.000. Mean Group Reward: 20.546. Training.
+[INFO] SlimeMouldAgentDefener. Step: 6700000. Time Elapsed: 8739.383 s. Mean Reward: 0.000. Mean Group Reward: 19.792. Training.
+[INFO] SlimeMouldAgentDefener. Step: 6750000. Time Elapsed: 8827.076 s. Mean Reward: 0.000. Mean Group Reward: 20.942. Training.
+[INFO] SlimeMouldAgentDefener. Step: 6800000. Time Elapsed: 8913.670 s. Mean Reward: 0.000. Mean Group Reward: 20.506. Training.
+[INFO] SlimeMouldAgentDefener. Step: 6850000. Time Elapsed: 8982.390 s. Mean Reward: 0.000. Mean Group Reward: 21.872. Training.
+[INFO] SlimeMouldAgentDefener. Step: 6900000. Time Elapsed: 9048.877 s. Mean Reward: 0.000. Mean Group Reward: 22.059. Training.
+[INFO] SlimeMouldAgentDefener. Step: 6950000. Time Elapsed: 9116.829 s. Mean Reward: 0.000. Mean Group Reward: 20.270. Training.
+[INFO] SlimeMouldAgentDefener. Step: 7000000. Time Elapsed: 9185.427 s. Mean Reward: 0.000. Mean Group Reward: 20.094. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-6999966.onnx
+[INFO] SlimeMouldAgentDefener. Step: 7050000. Time Elapsed: 9254.830 s. Mean Reward: 0.000. Mean Group Reward: 21.369. Training.
+[INFO] SlimeMouldAgentDefener. Step: 7100000. Time Elapsed: 9323.243 s. Mean Reward: 0.000. Mean Group Reward: 21.165. Training.
+[INFO] SlimeMouldAgentDefener. Step: 7150000. Time Elapsed: 9391.892 s. Mean Reward: 0.000. Mean Group Reward: 22.693. Training.
+[INFO] SlimeMouldAgentDefener. Step: 7200000. Time Elapsed: 9459.574 s. Mean Reward: 0.000. Mean Group Reward: 21.046. Training.
+[INFO] SlimeMouldAgentDefener. Step: 7250000. Time Elapsed: 9524.955 s. Mean Reward: 0.000. Mean Group Reward: 22.266. Training.
+[INFO] SlimeMouldAgentDefener. Step: 7300000. Time Elapsed: 9593.734 s. Mean Reward: 0.000. Mean Group Reward: 22.160. Training.
+[INFO] SlimeMouldAgentDefener. Step: 7350000. Time Elapsed: 9662.546 s. Mean Reward: 0.000. Mean Group Reward: 21.196. Training.
+[INFO] SlimeMouldAgentDefener. Step: 7400000. Time Elapsed: 9730.863 s. Mean Reward: 0.000. Mean Group Reward: 21.836. Training.
+[INFO] SlimeMouldAgentDefener. Step: 7450000. Time Elapsed: 9800.526 s. Mean Reward: 0.000. Mean Group Reward: 20.998. Training.
+[INFO] SlimeMouldAgentDefener. Step: 7500000. Time Elapsed: 9869.732 s. Mean Reward: 0.000. Mean Group Reward: 20.485. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-7499944.onnx
+[INFO] SlimeMouldAgentDefener. Step: 7550000. Time Elapsed: 9935.238 s. Mean Reward: 0.000. Mean Group Reward: 21.403. Training.
+[INFO] SlimeMouldAgentDefener. Step: 7600000. Time Elapsed: 10002.983 s. Mean Reward: 0.000. Mean Group Reward: 22.547. Training.
+[INFO] SlimeMouldAgentDefener. Step: 7650000. Time Elapsed: 10071.161 s. Mean Reward: 0.000. Mean Group Reward: 21.077. Training.
+[INFO] SlimeMouldAgentDefener. Step: 7700000. Time Elapsed: 10139.881 s. Mean Reward: 0.000. Mean Group Reward: 20.467. Training.
+[INFO] SlimeMouldAgentDefener. Step: 7750000. Time Elapsed: 10208.470 s. Mean Reward: 0.000. Mean Group Reward: 22.126. Training.
+[INFO] SlimeMouldAgentDefener. Step: 7800000. Time Elapsed: 10277.039 s. Mean Reward: 0.000. Mean Group Reward: 21.043. Training.
+[INFO] SlimeMouldAgentDefener. Step: 7850000. Time Elapsed: 10345.103 s. Mean Reward: 0.000. Mean Group Reward: 21.386. Training.
+[INFO] SlimeMouldAgentDefener. Step: 7900000. Time Elapsed: 10410.862 s. Mean Reward: 0.000. Mean Group Reward: 22.163. Training.
+[INFO] SlimeMouldAgentDefener. Step: 7950000. Time Elapsed: 10479.533 s. Mean Reward: 0.000. Mean Group Reward: 21.758. Training.
+[INFO] SlimeMouldAgentDefener. Step: 8000000. Time Elapsed: 10548.280 s. Mean Reward: 0.000. Mean Group Reward: 22.177. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-7999962.onnx
+[INFO] SlimeMouldAgentDefener. Step: 8050000. Time Elapsed: 10617.521 s. Mean Reward: 0.000. Mean Group Reward: 22.571. Training.
+[INFO] SlimeMouldAgentDefener. Step: 8100000. Time Elapsed: 10685.832 s. Mean Reward: 0.000. Mean Group Reward: 22.561. Training.
+[INFO] SlimeMouldAgentDefener. Step: 8150000. Time Elapsed: 10754.208 s. Mean Reward: 0.000. Mean Group Reward: 22.584. Training.
+[INFO] SlimeMouldAgentDefener. Step: 8200000. Time Elapsed: 10823.547 s. Mean Reward: 0.000. Mean Group Reward: 21.361. Training.
+[INFO] SlimeMouldAgentDefener. Step: 8250000. Time Elapsed: 10889.399 s. Mean Reward: 0.000. Mean Group Reward: 22.194. Training.
+[INFO] SlimeMouldAgentDefener. Step: 8300000. Time Elapsed: 10958.775 s. Mean Reward: 0.000. Mean Group Reward: 21.019. Training.
+[INFO] SlimeMouldAgentDefener. Step: 8350000. Time Elapsed: 11026.949 s. Mean Reward: 0.000. Mean Group Reward: 21.831. Training.
+[INFO] SlimeMouldAgentDefener. Step: 8400000. Time Elapsed: 11095.374 s. Mean Reward: 0.000. Mean Group Reward: 21.775. Training.
+[INFO] SlimeMouldAgentDefener. Step: 8450000. Time Elapsed: 11164.064 s. Mean Reward: 0.000. Mean Group Reward: 22.561. Training.
+[INFO] SlimeMouldAgentDefener. Step: 8500000. Time Elapsed: 11231.532 s. Mean Reward: 0.000. Mean Group Reward: 22.981. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-8499988.onnx
+[INFO] SlimeMouldAgentDefener. Step: 8550000. Time Elapsed: 11300.073 s. Mean Reward: 0.000. Mean Group Reward: 21.896. Training.
+[INFO] SlimeMouldAgentDefener. Step: 8600000. Time Elapsed: 11366.262 s. Mean Reward: 0.000. Mean Group Reward: 22.978. Training.
+[INFO] SlimeMouldAgentDefener. Step: 8650000. Time Elapsed: 11432.657 s. Mean Reward: 0.000. Mean Group Reward: 20.697. Training.
+[INFO] SlimeMouldAgentDefener. Step: 8700000. Time Elapsed: 11499.422 s. Mean Reward: 0.000. Mean Group Reward: 21.001. Training.
+[INFO] SlimeMouldAgentDefener. Step: 8750000. Time Elapsed: 11567.055 s. Mean Reward: 0.000. Mean Group Reward: 22.550. Training.
+[INFO] SlimeMouldAgentDefener. Step: 8800000. Time Elapsed: 11634.242 s. Mean Reward: 0.000. Mean Group Reward: 21.438. Training.
+[INFO] SlimeMouldAgentDefener. Step: 8850000. Time Elapsed: 11701.826 s. Mean Reward: 0.000. Mean Group Reward: 22.980. Training.
+[INFO] SlimeMouldAgentDefener. Step: 8900000. Time Elapsed: 11768.952 s. Mean Reward: 0.000. Mean Group Reward: 22.146. Training.
+[INFO] SlimeMouldAgentDefener. Step: 8950000. Time Elapsed: 11833.392 s. Mean Reward: 0.000. Mean Group Reward: 22.154. Training.
+[INFO] SlimeMouldAgentDefener. Step: 9000000. Time Elapsed: 11900.102 s. Mean Reward: 0.000. Mean Group Reward: 22.981. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-8999984.onnx
+[INFO] SlimeMouldAgentDefener. Step: 9050000. Time Elapsed: 11966.295 s. Mean Reward: 0.000. Mean Group Reward: 22.559. Training.
+[INFO] SlimeMouldAgentDefener. Step: 9100000. Time Elapsed: 12032.576 s. Mean Reward: 0.000. Mean Group Reward: 22.556. Training.
+[INFO] SlimeMouldAgentDefener. Step: 9150000. Time Elapsed: 12099.891 s. Mean Reward: 0.000. Mean Group Reward: 22.180. Training.
+[INFO] SlimeMouldAgentDefener. Step: 9200000. Time Elapsed: 12166.819 s. Mean Reward: 0.000. Mean Group Reward: 22.560. Training.
+[INFO] SlimeMouldAgentDefener. Step: 9250000. Time Elapsed: 12232.843 s. Mean Reward: 0.000. Mean Group Reward: 22.980. Training.
+[INFO] SlimeMouldAgentDefener. Step: 9300000. Time Elapsed: 12297.967 s. Mean Reward: 0.000. Mean Group Reward: 22.157. Training.
+[INFO] SlimeMouldAgentDefener. Step: 9350000. Time Elapsed: 12365.234 s. Mean Reward: 0.000. Mean Group Reward: 21.380. Training.
+[INFO] SlimeMouldAgentDefener. Step: 9400000. Time Elapsed: 12431.881 s. Mean Reward: 0.000. Mean Group Reward: 22.130. Training.
+[INFO] SlimeMouldAgentDefener. Step: 9450000. Time Elapsed: 12499.850 s. Mean Reward: 0.000. Mean Group Reward: 22.979. Training.
+[INFO] SlimeMouldAgentDefener. Step: 9500000. Time Elapsed: 12566.275 s. Mean Reward: 0.000. Mean Group Reward: 22.547. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-9499938.onnx
+[INFO] SlimeMouldAgentDefener. Step: 9550000. Time Elapsed: 12632.928 s. Mean Reward: 0.000. Mean Group Reward: 22.979. Training.
+[INFO] SlimeMouldAgentDefener. Step: 9600000. Time Elapsed: 12699.329 s. Mean Reward: 0.000. Mean Group Reward: 22.981. Training.
+[INFO] SlimeMouldAgentDefener. Step: 9650000. Time Elapsed: 12762.405 s. Mean Reward: 0.000. Mean Group Reward: 21.777. Training.
+[INFO] SlimeMouldAgentDefener. Step: 9700000. Time Elapsed: 12828.770 s. Mean Reward: 0.000. Mean Group Reward: 21.019. Training.
+[INFO] SlimeMouldAgentDefener. Step: 9750000. Time Elapsed: 12895.434 s. Mean Reward: 0.000. Mean Group Reward: 21.774. Training.
+[INFO] SlimeMouldAgentDefener. Step: 9800000. Time Elapsed: 12962.114 s. Mean Reward: 0.000. Mean Group Reward: 21.742. Training.
+[INFO] SlimeMouldAgentDefener. Step: 9850000. Time Elapsed: 13029.357 s. Mean Reward: 0.000. Mean Group Reward: 21.811. Training.
+[INFO] SlimeMouldAgentDefener. Step: 9900000. Time Elapsed: 13095.876 s. Mean Reward: 0.000. Mean Group Reward: 21.758. Training.
+[INFO] SlimeMouldAgentDefener. Step: 9950000. Time Elapsed: 13160.078 s. Mean Reward: 0.000. Mean Group Reward: 21.757. Training.
+[INFO] SlimeMouldAgentDefener. Step: 10000000. Time Elapsed: 13226.829 s. Mean Reward: 0.000. Mean Group Reward: 21.794. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-9999978.onnx
+[INFO] SlimeMouldAgentDefener. Step: 10050000. Time Elapsed: 13292.693 s. Mean Reward: 0.000. Mean Group Reward: 22.157. Training.
+[INFO] SlimeMouldAgentDefener. Step: 10100000. Time Elapsed: 13359.848 s. Mean Reward: 0.000. Mean Group Reward: 22.561. Training.
+[INFO] SlimeMouldAgentDefener. Step: 10150000. Time Elapsed: 13426.902 s. Mean Reward: 0.000. Mean Group Reward: 22.147. Training.
+[INFO] SlimeMouldAgentDefener. Step: 10200000. Time Elapsed: 13494.111 s. Mean Reward: 0.000. Mean Group Reward: 22.549. Training.
+[INFO] SlimeMouldAgentDefener. Step: 10250000. Time Elapsed: 13560.292 s. Mean Reward: 0.000. Mean Group Reward: 22.981. Training.
+[INFO] SlimeMouldAgentDefener. Step: 10300000. Time Elapsed: 13624.040 s. Mean Reward: 0.000. Mean Group Reward: 21.764. Training.
+[INFO] SlimeMouldAgentDefener. Step: 10350000. Time Elapsed: 13690.505 s. Mean Reward: 0.000. Mean Group Reward: 22.177. Training.
+[INFO] SlimeMouldAgentDefener. Step: 10400000. Time Elapsed: 13758.189 s. Mean Reward: 0.000. Mean Group Reward: 21.791. Training.
+[INFO] SlimeMouldAgentDefener. Step: 10450000. Time Elapsed: 13823.775 s. Mean Reward: 0.000. Mean Group Reward: 22.979. Training.
+[INFO] SlimeMouldAgentDefener. Step: 10500000. Time Elapsed: 13889.322 s. Mean Reward: 0.000. Mean Group Reward: 22.556. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-10499986.onnx
+[INFO] SlimeMouldAgentDefener. Step: 10550000. Time Elapsed: 13956.172 s. Mean Reward: 0.000. Mean Group Reward: 22.581. Training.
+[INFO] SlimeMouldAgentDefener. Step: 10600000. Time Elapsed: 14020.764 s. Mean Reward: 0.000. Mean Group Reward: 22.980. Training.
+[INFO] SlimeMouldAgentDefener. Step: 10650000. Time Elapsed: 14087.110 s. Mean Reward: 0.000. Mean Group Reward: 21.366. Training.
+[INFO] SlimeMouldAgentDefener. Step: 10700000. Time Elapsed: 14153.437 s. Mean Reward: 0.000. Mean Group Reward: 22.552. Training.
+[INFO] SlimeMouldAgentDefener. Step: 10750000. Time Elapsed: 14221.418 s. Mean Reward: 0.000. Mean Group Reward: 22.567. Training.
+[INFO] SlimeMouldAgentDefener. Step: 10800000. Time Elapsed: 14288.376 s. Mean Reward: 0.000. Mean Group Reward: 22.604. Training.
+[INFO] SlimeMouldAgentDefener. Step: 10850000. Time Elapsed: 14355.321 s. Mean Reward: 0.000. Mean Group Reward: 22.138. Training.
+[INFO] SlimeMouldAgentDefener. Step: 10900000. Time Elapsed: 14422.023 s. Mean Reward: 0.000. Mean Group Reward: 22.145. Training.
+[INFO] SlimeMouldAgentDefener. Step: 10950000. Time Elapsed: 14485.451 s. Mean Reward: 0.000. Mean Group Reward: 22.580. Training.
+[INFO] SlimeMouldAgentDefener. Step: 11000000. Time Elapsed: 14551.939 s. Mean Reward: 0.000. Mean Group Reward: 21.382. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-10999938.onnx
+[INFO] SlimeMouldAgentDefener. Step: 11050000. Time Elapsed: 14618.583 s. Mean Reward: 0.000. Mean Group Reward: 22.981. Training.
+[INFO] SlimeMouldAgentDefener. Step: 11100000. Time Elapsed: 14683.876 s. Mean Reward: 0.000. Mean Group Reward: 22.981. Training.
+[INFO] SlimeMouldAgentDefener. Step: 11150000. Time Elapsed: 14751.400 s. Mean Reward: 0.000. Mean Group Reward: 22.547. Training.
+[INFO] SlimeMouldAgentDefener. Step: 11200000. Time Elapsed: 14817.541 s. Mean Reward: 0.000. Mean Group Reward: 22.979. Training.
+[INFO] SlimeMouldAgentDefener. Step: 11250000. Time Elapsed: 14884.828 s. Mean Reward: 0.000. Mean Group Reward: 22.556. Training.
+[INFO] SlimeMouldAgentDefener. Step: 11300000. Time Elapsed: 14951.522 s. Mean Reward: 0.000. Mean Group Reward: 22.981. Training.
+[INFO] SlimeMouldAgentDefener. Step: 11350000. Time Elapsed: 15015.752 s. Mean Reward: 0.000. Mean Group Reward: 21.826. Training.
+[INFO] SlimeMouldAgentDefener. Step: 11400000. Time Elapsed: 15082.554 s. Mean Reward: 0.000. Mean Group Reward: 22.577. Training.
+[INFO] SlimeMouldAgentDefener. Step: 11450000. Time Elapsed: 15149.606 s. Mean Reward: 0.000. Mean Group Reward: 22.547. Training.
+[INFO] SlimeMouldAgentDefener. Step: 11500000. Time Elapsed: 15216.415 s. Mean Reward: 0.000. Mean Group Reward: 22.980. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-11499954.onnx
+[INFO] SlimeMouldAgentDefener. Step: 11550000. Time Elapsed: 15283.272 s. Mean Reward: 0.000. Mean Group Reward: 22.980. Training.
+[INFO] SlimeMouldAgentDefener. Step: 11600000. Time Elapsed: 15350.890 s. Mean Reward: 0.000. Mean Group Reward: 22.590. Training.
+[INFO] SlimeMouldAgentDefener. Step: 11650000. Time Elapsed: 15415.114 s. Mean Reward: 0.000. Mean Group Reward: 22.598. Training.
+[INFO] SlimeMouldAgentDefener. Step: 11700000. Time Elapsed: 15482.238 s. Mean Reward: 0.000. Mean Group Reward: 22.545. Training.
+[INFO] SlimeMouldAgentDefener. Step: 11750000. Time Elapsed: 15549.427 s. Mean Reward: 0.000. Mean Group Reward: 20.980. Training.
+[INFO] SlimeMouldAgentDefener. Step: 11800000. Time Elapsed: 15615.626 s. Mean Reward: 0.000. Mean Group Reward: 22.562. Training.
+[INFO] SlimeMouldAgentDefener. Step: 11850000. Time Elapsed: 15681.990 s. Mean Reward: 0.000. Mean Group Reward: 22.132. Training.
+[INFO] SlimeMouldAgentDefener. Step: 11900000. Time Elapsed: 15748.130 s. Mean Reward: 0.000. Mean Group Reward: 22.545. Training.
+[INFO] SlimeMouldAgentDefener. Step: 11950000. Time Elapsed: 15814.308 s. Mean Reward: 0.000. Mean Group Reward: 22.979. Training.
+[INFO] SlimeMouldAgentDefener. Step: 12000000. Time Elapsed: 15879.162 s. Mean Reward: 0.000. Mean Group Reward: 22.981. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-11999964.onnx
+[INFO] SlimeMouldAgentDefener. Step: 12050000. Time Elapsed: 15946.322 s. Mean Reward: 0.000. Mean Group Reward: 22.179. Training.
+[INFO] SlimeMouldAgentDefener. Step: 12100000. Time Elapsed: 16013.670 s. Mean Reward: 0.000. Mean Group Reward: 22.557. Training.
+[INFO] SlimeMouldAgentDefener. Step: 12150000. Time Elapsed: 16081.160 s. Mean Reward: 0.000. Mean Group Reward: 21.761. Training.
+[INFO] SlimeMouldAgentDefener. Step: 12200000. Time Elapsed: 16147.533 s. Mean Reward: 0.000. Mean Group Reward: 22.155. Training.
+[INFO] SlimeMouldAgentDefener. Step: 12250000. Time Elapsed: 16213.793 s. Mean Reward: 0.000. Mean Group Reward: 21.766. Training.
+[INFO] SlimeMouldAgentDefener. Step: 12300000. Time Elapsed: 16280.597 s. Mean Reward: 0.000. Mean Group Reward: 22.553. Training.
+[INFO] SlimeMouldAgentDefener. Step: 12350000. Time Elapsed: 16345.140 s. Mean Reward: 0.000. Mean Group Reward: 21.759. Training.
+[INFO] SlimeMouldAgentDefener. Step: 12400000. Time Elapsed: 16411.325 s. Mean Reward: 0.000. Mean Group Reward: 22.202. Training.
+[INFO] SlimeMouldAgentDefener. Step: 12450000. Time Elapsed: 16478.304 s. Mean Reward: 0.000. Mean Group Reward: 22.583. Training.
+[INFO] SlimeMouldAgentDefener. Step: 12500000. Time Elapsed: 16544.928 s. Mean Reward: 0.000. Mean Group Reward: 22.179. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-12499950.onnx
+[INFO] SlimeMouldAgentDefener. Step: 12550000. Time Elapsed: 16611.766 s. Mean Reward: 0.000. Mean Group Reward: 21.408. Training.
+[INFO] SlimeMouldAgentDefener. Step: 12600000. Time Elapsed: 16677.283 s. Mean Reward: 0.000. Mean Group Reward: 22.173. Training.
+[INFO] SlimeMouldAgentDefener. Step: 12650000. Time Elapsed: 16743.442 s. Mean Reward: 0.000. Mean Group Reward: 22.581. Training.
+[INFO] SlimeMouldAgentDefener. Step: 12700000. Time Elapsed: 16806.431 s. Mean Reward: 0.000. Mean Group Reward: 22.143. Training.
+[INFO] SlimeMouldAgentDefener. Step: 12750000. Time Elapsed: 16872.818 s. Mean Reward: 0.000. Mean Group Reward: 22.572. Training.
+[INFO] SlimeMouldAgentDefener. Step: 12800000. Time Elapsed: 16938.953 s. Mean Reward: 0.000. Mean Group Reward: 21.780. Training.
+[INFO] SlimeMouldAgentDefener. Step: 12850000. Time Elapsed: 17005.150 s. Mean Reward: 0.000. Mean Group Reward: 21.384. Training.
+[INFO] SlimeMouldAgentDefener. Step: 12900000. Time Elapsed: 17072.703 s. Mean Reward: 0.000. Mean Group Reward: 22.592. Training.
+[INFO] SlimeMouldAgentDefener. Step: 12950000. Time Elapsed: 17139.480 s. Mean Reward: 0.000. Mean Group Reward: 22.564. Training.
+[INFO] SlimeMouldAgentDefener. Step: 13000000. Time Elapsed: 17206.475 s. Mean Reward: 0.000. Mean Group Reward: 22.561. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-12999942.onnx
+[INFO] SlimeMouldAgentDefener. Step: 13050000. Time Elapsed: 17269.987 s. Mean Reward: 0.000. Mean Group Reward: 21.393. Training.
+[INFO] SlimeMouldAgentDefener. Step: 13100000. Time Elapsed: 17336.303 s. Mean Reward: 0.000. Mean Group Reward: 22.981. Training.
+[INFO] SlimeMouldAgentDefener. Step: 13150000. Time Elapsed: 17403.262 s. Mean Reward: 0.000. Mean Group Reward: 22.557. Training.
+[INFO] SlimeMouldAgentDefener. Step: 13200000. Time Elapsed: 17468.758 s. Mean Reward: 0.000. Mean Group Reward: 22.980. Training.
+[INFO] SlimeMouldAgentDefener. Step: 13250000. Time Elapsed: 17535.515 s. Mean Reward: 0.000. Mean Group Reward: 22.980. Training.
+[INFO] SlimeMouldAgentDefener. Step: 13300000. Time Elapsed: 17601.480 s. Mean Reward: 0.000. Mean Group Reward: 21.377. Training.
+[INFO] SlimeMouldAgentDefener. Step: 13350000. Time Elapsed: 17668.924 s. Mean Reward: 0.000. Mean Group Reward: 21.012. Training.
+[INFO] SlimeMouldAgentDefener. Step: 13400000. Time Elapsed: 17733.305 s. Mean Reward: 0.000. Mean Group Reward: 22.563. Training.
+[INFO] SlimeMouldAgentDefener. Step: 13450000. Time Elapsed: 17801.190 s. Mean Reward: 0.000. Mean Group Reward: 22.603. Training.
+[INFO] SlimeMouldAgentDefener. Step: 13500000. Time Elapsed: 17866.962 s. Mean Reward: 0.000. Mean Group Reward: 22.574. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-13499954.onnx
+[INFO] SlimeMouldAgentDefener. Step: 13550000. Time Elapsed: 17935.142 s. Mean Reward: 0.000. Mean Group Reward: 21.815. Training.
+[INFO] SlimeMouldAgentDefener. Step: 13600000. Time Elapsed: 18002.301 s. Mean Reward: 0.000. Mean Group Reward: 22.572. Training.
+[INFO] SlimeMouldAgentDefener. Step: 13650000. Time Elapsed: 18069.899 s. Mean Reward: 0.000. Mean Group Reward: 22.164. Training.
+[INFO] SlimeMouldAgentDefener. Step: 13700000. Time Elapsed: 18133.199 s. Mean Reward: 0.000. Mean Group Reward: 21.356. Training.
+[INFO] SlimeMouldAgentDefener. Step: 13750000. Time Elapsed: 18200.498 s. Mean Reward: 0.000. Mean Group Reward: 21.021. Training.
+[INFO] SlimeMouldAgentDefener. Step: 13800000. Time Elapsed: 18267.755 s. Mean Reward: 0.000. Mean Group Reward: 22.197. Training.
+[INFO] SlimeMouldAgentDefener. Step: 13850000. Time Elapsed: 18338.491 s. Mean Reward: 0.000. Mean Group Reward: 22.577. Training.
+[INFO] SlimeMouldAgentDefener. Step: 13900000. Time Elapsed: 18408.193 s. Mean Reward: 0.000. Mean Group Reward: 22.549. Training.
+[INFO] SlimeMouldAgentDefener. Step: 13950000. Time Elapsed: 18477.098 s. Mean Reward: 0.000. Mean Group Reward: 21.792. Training.
+[INFO] SlimeMouldAgentDefener. Step: 14000000. Time Elapsed: 18541.870 s. Mean Reward: 0.000. Mean Group Reward: 21.373. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-13999960.onnx
+[INFO] SlimeMouldAgentDefener. Step: 14050000. Time Elapsed: 18608.222 s. Mean Reward: 0.000. Mean Group Reward: 22.125. Training.
+[INFO] SlimeMouldAgentDefener. Step: 14100000. Time Elapsed: 18676.645 s. Mean Reward: 0.000. Mean Group Reward: 22.981. Training.
+[INFO] SlimeMouldAgentDefener. Step: 14150000. Time Elapsed: 18744.374 s. Mean Reward: 0.000. Mean Group Reward: 22.562. Training.
+[INFO] SlimeMouldAgentDefener. Step: 14200000. Time Elapsed: 18811.751 s. Mean Reward: 0.000. Mean Group Reward: 21.378. Training.
+[INFO] SlimeMouldAgentDefener. Step: 14250000. Time Elapsed: 18881.245 s. Mean Reward: 0.000. Mean Group Reward: 21.765. Training.
+[INFO] SlimeMouldAgentDefener. Step: 14300000. Time Elapsed: 18948.053 s. Mean Reward: 0.000. Mean Group Reward: 21.393. Training.
+[INFO] SlimeMouldAgentDefener. Step: 14350000. Time Elapsed: 19014.602 s. Mean Reward: 0.000. Mean Group Reward: 21.782. Training.
+[INFO] SlimeMouldAgentDefener. Step: 14400000. Time Elapsed: 19086.603 s. Mean Reward: 0.000. Mean Group Reward: 22.172. Training.
+[INFO] SlimeMouldAgentDefener. Step: 14450000. Time Elapsed: 19156.487 s. Mean Reward: 0.000. Mean Group Reward: 22.551. Training.
+[INFO] SlimeMouldAgentDefener. Step: 14500000. Time Elapsed: 19226.860 s. Mean Reward: 0.000. Mean Group Reward: 21.768. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-14499950.onnx
+[INFO] SlimeMouldAgentDefener. Step: 14550000. Time Elapsed: 19297.255 s. Mean Reward: 0.000. Mean Group Reward: 22.618. Training.
+[INFO] SlimeMouldAgentDefener. Step: 14600000. Time Elapsed: 19366.985 s. Mean Reward: 0.000. Mean Group Reward: 22.180. Training.
+[INFO] SlimeMouldAgentDefener. Step: 14650000. Time Elapsed: 19435.725 s. Mean Reward: 0.000. Mean Group Reward: 22.570. Training.
+[INFO] SlimeMouldAgentDefener. Step: 14700000. Time Elapsed: 19501.265 s. Mean Reward: 0.000. Mean Group Reward: 22.560. Training.
+[INFO] SlimeMouldAgentDefener. Step: 14750000. Time Elapsed: 19570.283 s. Mean Reward: 0.000. Mean Group Reward: 22.582. Training.
+[INFO] SlimeMouldAgentDefener. Step: 14800000. Time Elapsed: 19637.360 s. Mean Reward: 0.000. Mean Group Reward: 22.164. Training.
+[INFO] SlimeMouldAgentDefener. Step: 14850000. Time Elapsed: 19706.004 s. Mean Reward: 0.000. Mean Group Reward: 22.980. Training.
+[INFO] SlimeMouldAgentDefener. Step: 14900000. Time Elapsed: 19774.178 s. Mean Reward: 0.000. Mean Group Reward: 22.546. Training.
+[INFO] SlimeMouldAgentDefener. Step: 14950000. Time Elapsed: 19841.922 s. Mean Reward: 0.000. Mean Group Reward: 22.561. Training.
+[INFO] SlimeMouldAgentDefener. Step: 15000000. Time Elapsed: 19907.439 s. Mean Reward: 0.000. Mean Group Reward: 21.782. Training.
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-14999986.onnx
+[INFO] Exported results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-15000050.onnx
+[INFO] Copied results/slimemould_3/SlimeMouldAgentDefener/SlimeMouldAgentDefener-15000050.onnx to results/slimemould_3/SlimeMouldAgentDefener.onnx.
+

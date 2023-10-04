@@ -1,0 +1,413 @@
+(venv) ➜  python_part git:(main) time PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python mlagents-learn config/mergeDefenes.yaml --run-id=mergedefense_2
+
+            ┐  ╖
+        ╓╖╬│╡  ││╬╖╖
+    ╓╖╬│││││┘  ╬│││││╬╖
+ ╖╬│││││╬╜        ╙╬│││││╖╖                               ╗╗╗
+ ╬╬╬╬╖││╦╖        ╖╬││╗╣╣╣╬      ╟╣╣╬    ╟╣╣╣             ╜╜╜  ╟╣╣
+ ╬╬╬╬╬╬╬╬╖│╬╖╖╓╬╪│╓╣╣╣╣╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╒╣╣╖╗╣╣╣╗   ╣╣╣ ╣╣╣╣╣╣ ╟╣╣╖   ╣╣╣
+ ╬╬╬╬┐  ╙╬╬╬╬│╓╣╣╣╝╜  ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╣╙ ╙╣╣╣  ╣╣╣ ╙╟╣╣╜╙  ╫╣╣  ╟╣╣
+ ╬╬╬╬┐     ╙╬╬╣╣      ╫╣╣╣╬      ╟╣╣╬    ╟╣╣╣ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣     ╣╣╣┌╣╣╜
+ ╬╬╬╜       ╬╬╣╣      ╙╝╣╣╬      ╙╣╣╣╗╖╓╗╣╣╣╜ ╟╣╣╬   ╣╣╣  ╣╣╣  ╟╣╣╦╓    ╣╣╣╣╣
+ ╙   ╓╦╖    ╬╬╣╣   ╓╗╗╖            ╙╝╣╣╣╣╝╜   ╘╝╝╜   ╝╝╝  ╝╝╝   ╙╣╣╣    ╟╣╣╣
+   ╩╬╬╬╬╬╬╦╦╬╬╣╣╗╣╣╣╣╣╣╣╝                                             ╫╣╣╣╣
+      ╙╬╬╬╬╬╬╬╣╣╣╣╣╣╝╜
+          ╙╬╬╬╣╣╣╜
+             ╙
+        
+ Version information:
+  ml-agents: 0.30.0,
+  ml-agents-envs: 0.30.0,
+  Communicator API: 1.5.0,
+  PyTorch: 1.11.0+cpu
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Connected to Unity environment with package version 2.0.1 and communication version 1.5.0
+[INFO] Connected new brain: MLMergeDefender?team=0
+[INFO] Hyperparameters for behavior name MLMergeDefender: 
+	trainer_type:	poca
+	hyperparameters:	
+	  batch_size:	1024
+	  buffer_size:	10240
+	  learning_rate:	0.0003
+	  beta:	0.01
+	  epsilon:	0.2
+	  lambd:	0.95
+	  num_epoch:	3
+	  learning_rate_schedule:	constant
+	  beta_schedule:	constant
+	  epsilon_schedule:	constant
+	network_settings:	
+	  normalize:	True
+	  hidden_units:	200
+	  num_layers:	3
+	  vis_encode_type:	simple
+	  memory:	None
+	  goal_conditioning_type:	hyper
+	  deterministic:	False
+	reward_signals:	
+	  extrinsic:	
+	    gamma:	0.99
+	    strength:	1.0
+	    network_settings:	
+	      normalize:	False
+	      hidden_units:	128
+	      num_layers:	2
+	      vis_encode_type:	simple
+	      memory:	None
+	      goal_conditioning_type:	hyper
+	      deterministic:	False
+	init_path:	None
+	keep_checkpoints:	10
+	checkpoint_interval:	500000
+	max_steps:	15500000
+	time_horizon:	128
+	summary_freq:	50000
+	threaded:	False
+	self_play:	None
+	behavioral_cloning:	None
+[INFO] MLMergeDefender. Step: 50000. Time Elapsed: 81.614 s. Mean Reward: 0.000. Mean Group Reward: 44.982. Training.
+[INFO] MLMergeDefender. Step: 100000. Time Elapsed: 158.084 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 150000. Time Elapsed: 240.054 s. Mean Reward: 0.000. Mean Group Reward: 43.845. Training.
+[INFO] MLMergeDefender. Step: 200000. Time Elapsed: 336.780 s. Mean Reward: 0.000. Mean Group Reward: 43.224. Training.
+[INFO] MLMergeDefender. Step: 250000. Time Elapsed: 430.337 s. Mean Reward: 0.000. Mean Group Reward: 43.644. Training.
+[INFO] MLMergeDefender. Step: 300000. Time Elapsed: 523.337 s. Mean Reward: 0.000. Mean Group Reward: 43.529. Training.
+[INFO] MLMergeDefender. Step: 350000. Time Elapsed: 619.382 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 400000. Time Elapsed: 707.861 s. Mean Reward: 0.000. Mean Group Reward: 44.988. Training.
+[INFO] MLMergeDefender. Step: 450000. Time Elapsed: 793.380 s. Mean Reward: 0.000. Mean Group Reward: 43.556. Training.
+[INFO] MLMergeDefender. Step: 500000. Time Elapsed: 886.109 s. Mean Reward: 0.000. Mean Group Reward: 44.975. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-499982.onnx
+[INFO] MLMergeDefender. Step: 550000. Time Elapsed: 976.422 s. Mean Reward: 0.000. Mean Group Reward: 44.982. Training.
+[INFO] MLMergeDefender. Step: 600000. Time Elapsed: 1066.621 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 650000. Time Elapsed: 1161.656 s. Mean Reward: 0.000. Mean Group Reward: 44.976. Training.
+[INFO] MLMergeDefender. Step: 700000. Time Elapsed: 1254.027 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 750000. Time Elapsed: 1343.173 s. Mean Reward: 0.000. Mean Group Reward: 41.430. Training.
+[INFO] MLMergeDefender. Step: 800000. Time Elapsed: 1429.281 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] MLMergeDefender. Step: 850000. Time Elapsed: 1515.360 s. Mean Reward: 0.000. Mean Group Reward: 43.572. Training.
+[INFO] MLMergeDefender. Step: 900000. Time Elapsed: 1600.131 s. Mean Reward: 0.000. Mean Group Reward: 40.375. Training.
+[INFO] MLMergeDefender. Step: 950000. Time Elapsed: 1685.500 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] MLMergeDefender. Step: 1000000. Time Elapsed: 1770.222 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-999996.onnx
+[INFO] MLMergeDefender. Step: 1050000. Time Elapsed: 1856.125 s. Mean Reward: 0.000. Mean Group Reward: 44.282. Training.
+[INFO] MLMergeDefender. Step: 1100000. Time Elapsed: 1940.115 s. Mean Reward: 0.000. Mean Group Reward: 44.487. Training.
+[INFO] MLMergeDefender. Step: 1150000. Time Elapsed: 2020.856 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 1200000. Time Elapsed: 2106.982 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 1250000. Time Elapsed: 2191.760 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 1300000. Time Elapsed: 2275.693 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] MLMergeDefender. Step: 1350000. Time Elapsed: 2361.061 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 1400000. Time Elapsed: 2451.054 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 1450000. Time Elapsed: 2543.215 s. Mean Reward: 0.000. Mean Group Reward: 43.448. Training.
+[INFO] MLMergeDefender. Step: 1500000. Time Elapsed: 2632.921 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-1499988.onnx
+[INFO] MLMergeDefender. Step: 1550000. Time Elapsed: 2718.350 s. Mean Reward: 0.000. Mean Group Reward: 41.874. Training.
+[INFO] MLMergeDefender. Step: 1600000. Time Elapsed: 2801.298 s. Mean Reward: 0.000. Mean Group Reward: 43.548. Training.
+[INFO] MLMergeDefender. Step: 1650000. Time Elapsed: 2893.490 s. Mean Reward: 0.000. Mean Group Reward: 44.974. Training.
+[INFO] MLMergeDefender. Step: 1700000. Time Elapsed: 2981.953 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 1750000. Time Elapsed: 3073.443 s. Mean Reward: 0.000. Mean Group Reward: 43.283. Training.
+[INFO] MLMergeDefender. Step: 1800000. Time Elapsed: 3162.829 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] MLMergeDefender. Step: 1850000. Time Elapsed: 3249.819 s. Mean Reward: 0.000. Mean Group Reward: 43.307. Training.
+[INFO] MLMergeDefender. Step: 1900000. Time Elapsed: 3338.348 s. Mean Reward: 0.000. Mean Group Reward: 42.278. Training.
+[INFO] MLMergeDefender. Step: 1950000. Time Elapsed: 3427.704 s. Mean Reward: 0.000. Mean Group Reward: 42.112. Training.
+[INFO] MLMergeDefender. Step: 2000000. Time Elapsed: 3518.192 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-1999992.onnx
+[INFO] MLMergeDefender. Step: 2050000. Time Elapsed: 3608.820 s. Mean Reward: 0.000. Mean Group Reward: 42.625. Training.
+[INFO] MLMergeDefender. Step: 2100000. Time Elapsed: 3700.515 s. Mean Reward: 0.000. Mean Group Reward: 43.594. Training.
+[INFO] MLMergeDefender. Step: 2150000. Time Elapsed: 3791.259 s. Mean Reward: 0.000. Mean Group Reward: 41.398. Training.
+[INFO] MLMergeDefender. Step: 2200000. Time Elapsed: 3878.926 s. Mean Reward: 0.000. Mean Group Reward: 42.323. Training.
+[INFO] MLMergeDefender. Step: 2250000. Time Elapsed: 3968.310 s. Mean Reward: 0.000. Mean Group Reward: 43.749. Training.
+[INFO] MLMergeDefender. Step: 2300000. Time Elapsed: 4058.685 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 2350000. Time Elapsed: 4159.447 s. Mean Reward: 0.000. Mean Group Reward: 43.841. Training.
+[INFO] MLMergeDefender. Step: 2400000. Time Elapsed: 5089.611 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 2450000. Time Elapsed: 6035.979 s. Mean Reward: 0.000. Mean Group Reward: 43.457. Training.
+[INFO] MLMergeDefender. Step: 2500000. Time Elapsed: 6811.825 s. Mean Reward: 0.000. Mean Group Reward: 44.181. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-2499976.onnx
+[INFO] MLMergeDefender. Step: 2550000. Time Elapsed: 7408.321 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 2600000. Time Elapsed: 8342.767 s. Mean Reward: 0.000. Mean Group Reward: 43.130. Training.
+[INFO] MLMergeDefender. Step: 2650000. Time Elapsed: 9270.190 s. Mean Reward: 0.000. Mean Group Reward: 40.717. Training.
+[INFO] MLMergeDefender. Step: 2700000. Time Elapsed: 10212.239 s. Mean Reward: 0.000. Mean Group Reward: 41.734. Training.
+[INFO] MLMergeDefender. Step: 2750000. Time Elapsed: 10427.657 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 2800000. Time Elapsed: 10499.902 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 2850000. Time Elapsed: 10570.671 s. Mean Reward: 0.000. Mean Group Reward: 43.779. Training.
+[INFO] MLMergeDefender. Step: 2900000. Time Elapsed: 10642.540 s. Mean Reward: 0.000. Mean Group Reward: 44.982. Training.
+[INFO] MLMergeDefender. Step: 2950000. Time Elapsed: 10715.592 s. Mean Reward: 0.000. Mean Group Reward: 44.976. Training.
+[INFO] MLMergeDefender. Step: 3000000. Time Elapsed: 10789.932 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-2999964.onnx
+[INFO] MLMergeDefender. Step: 3050000. Time Elapsed: 10861.261 s. Mean Reward: 0.000. Mean Group Reward: 43.639. Training.
+[INFO] MLMergeDefender. Step: 3100000. Time Elapsed: 10933.078 s. Mean Reward: 0.000. Mean Group Reward: 44.469. Training.
+[INFO] MLMergeDefender. Step: 3150000. Time Elapsed: 11006.882 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] MLMergeDefender. Step: 3200000. Time Elapsed: 11078.408 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 3250000. Time Elapsed: 11151.163 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 3300000. Time Elapsed: 11224.167 s. Mean Reward: 0.000. Mean Group Reward: 43.339. Training.
+[INFO] MLMergeDefender. Step: 3350000. Time Elapsed: 11297.632 s. Mean Reward: 0.000. Mean Group Reward: 43.958. Training.
+[INFO] MLMergeDefender. Step: 3400000. Time Elapsed: 11369.872 s. Mean Reward: 0.000. Mean Group Reward: 44.983. Training.
+[INFO] MLMergeDefender. Step: 3450000. Time Elapsed: 11443.205 s. Mean Reward: 0.000. Mean Group Reward: 44.975. Training.
+[INFO] MLMergeDefender. Step: 3500000. Time Elapsed: 11516.987 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-3499950.onnx
+[INFO] MLMergeDefender. Step: 3550000. Time Elapsed: 11590.594 s. Mean Reward: 0.000. Mean Group Reward: 44.983. Training.
+[INFO] MLMergeDefender. Step: 3600000. Time Elapsed: 11660.669 s. Mean Reward: 0.000. Mean Group Reward: 44.976. Training.
+[INFO] MLMergeDefender. Step: 3650000. Time Elapsed: 11732.701 s. Mean Reward: 0.000. Mean Group Reward: 43.407. Training.
+[INFO] MLMergeDefender. Step: 3700000. Time Elapsed: 11806.052 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 3750000. Time Elapsed: 11879.471 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 3800000. Time Elapsed: 11953.137 s. Mean Reward: 0.000. Mean Group Reward: 44.976. Training.
+[INFO] MLMergeDefender. Step: 3850000. Time Elapsed: 12026.895 s. Mean Reward: 0.000. Mean Group Reward: 43.422. Training.
+[INFO] MLMergeDefender. Step: 3900000. Time Elapsed: 12099.884 s. Mean Reward: 0.000. Mean Group Reward: 44.983. Training.
+[INFO] MLMergeDefender. Step: 3950000. Time Elapsed: 12170.550 s. Mean Reward: 0.000. Mean Group Reward: 43.433. Training.
+[INFO] MLMergeDefender. Step: 4000000. Time Elapsed: 12244.445 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-3999986.onnx
+[INFO] MLMergeDefender. Step: 4050000. Time Elapsed: 12317.768 s. Mean Reward: 0.000. Mean Group Reward: 43.513. Training.
+[INFO] MLMergeDefender. Step: 4100000. Time Elapsed: 12390.064 s. Mean Reward: 0.000. Mean Group Reward: 43.980. Training.
+[INFO] MLMergeDefender. Step: 4150000. Time Elapsed: 12465.004 s. Mean Reward: 0.000. Mean Group Reward: 43.429. Training.
+[INFO] MLMergeDefender. Step: 4200000. Time Elapsed: 12538.451 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 4250000. Time Elapsed: 12611.228 s. Mean Reward: 0.000. Mean Group Reward: 44.746. Training.
+[INFO] MLMergeDefender. Step: 4300000. Time Elapsed: 12683.705 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 4350000. Time Elapsed: 12756.672 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] MLMergeDefender. Step: 4400000. Time Elapsed: 12829.048 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 4450000. Time Elapsed: 12902.582 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 4500000. Time Elapsed: 12975.928 s. Mean Reward: 0.000. Mean Group Reward: 43.555. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-4499916.onnx
+[INFO] MLMergeDefender. Step: 4550000. Time Elapsed: 13048.526 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 4600000. Time Elapsed: 13121.145 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 4650000. Time Elapsed: 13191.953 s. Mean Reward: 0.000. Mean Group Reward: 43.411. Training.
+[INFO] MLMergeDefender. Step: 4700000. Time Elapsed: 13265.769 s. Mean Reward: 0.000. Mean Group Reward: 44.982. Training.
+[INFO] MLMergeDefender. Step: 4750000. Time Elapsed: 13339.303 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 4800000. Time Elapsed: 13412.354 s. Mean Reward: 0.000. Mean Group Reward: 43.457. Training.
+[INFO] MLMergeDefender. Step: 4850000. Time Elapsed: 13485.894 s. Mean Reward: 0.000. Mean Group Reward: 44.982. Training.
+[INFO] MLMergeDefender. Step: 4900000. Time Elapsed: 13559.352 s. Mean Reward: 0.000. Mean Group Reward: 40.689. Training.
+[INFO] MLMergeDefender. Step: 4950000. Time Elapsed: 13629.559 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 5000000. Time Elapsed: 13702.627 s. Mean Reward: 0.000. Mean Group Reward: 41.817. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-4999970.onnx
+[INFO] MLMergeDefender. Step: 5050000. Time Elapsed: 13775.530 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 5100000. Time Elapsed: 13848.344 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] MLMergeDefender. Step: 5150000. Time Elapsed: 13921.889 s. Mean Reward: 0.000. Mean Group Reward: 42.124. Training.
+[INFO] MLMergeDefender. Step: 5200000. Time Elapsed: 13996.232 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 5250000. Time Elapsed: 14069.680 s. Mean Reward: 0.000. Mean Group Reward: 43.472. Training.
+[INFO] MLMergeDefender. Step: 5300000. Time Elapsed: 14139.617 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 5350000. Time Elapsed: 14215.230 s. Mean Reward: 0.000. Mean Group Reward: 42.769. Training.
+[INFO] MLMergeDefender. Step: 5400000. Time Elapsed: 14288.303 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 5450000. Time Elapsed: 14361.853 s. Mean Reward: 0.000. Mean Group Reward: 43.506. Training.
+[INFO] MLMergeDefender. Step: 5500000. Time Elapsed: 14436.031 s. Mean Reward: 0.000. Mean Group Reward: 43.380. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-5499984.onnx
+[INFO] MLMergeDefender. Step: 5550000. Time Elapsed: 14509.864 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 5600000. Time Elapsed: 14582.360 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 5650000. Time Elapsed: 14654.205 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 5700000. Time Elapsed: 14726.893 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 5750000. Time Elapsed: 14801.754 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 5800000. Time Elapsed: 14875.064 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] MLMergeDefender. Step: 5850000. Time Elapsed: 14948.866 s. Mean Reward: 0.000. Mean Group Reward: 44.897. Training.
+[INFO] MLMergeDefender. Step: 5900000. Time Elapsed: 15021.992 s. Mean Reward: 0.000. Mean Group Reward: 43.433. Training.
+[INFO] MLMergeDefender. Step: 5950000. Time Elapsed: 15095.743 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 6000000. Time Elapsed: 15167.377 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-5999978.onnx
+[INFO] MLMergeDefender. Step: 6050000. Time Elapsed: 15240.649 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 6100000. Time Elapsed: 15313.350 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 6150000. Time Elapsed: 15386.618 s. Mean Reward: 0.000. Mean Group Reward: 43.967. Training.
+[INFO] MLMergeDefender. Step: 6200000. Time Elapsed: 15460.020 s. Mean Reward: 0.000. Mean Group Reward: 43.452. Training.
+[INFO] MLMergeDefender. Step: 6250000. Time Elapsed: 15533.816 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 6300000. Time Elapsed: 15606.985 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 6350000. Time Elapsed: 15678.858 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 6400000. Time Elapsed: 15751.410 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 6450000. Time Elapsed: 15825.232 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 6500000. Time Elapsed: 15899.647 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-6499976.onnx
+[INFO] MLMergeDefender. Step: 6550000. Time Elapsed: 15974.068 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 6600000. Time Elapsed: 16047.096 s. Mean Reward: 0.000. Mean Group Reward: 40.655. Training.
+[INFO] MLMergeDefender. Step: 6650000. Time Elapsed: 16120.426 s. Mean Reward: 0.000. Mean Group Reward: 43.309. Training.
+[INFO] MLMergeDefender. Step: 6700000. Time Elapsed: 16191.501 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 6750000. Time Elapsed: 16265.658 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 6800000. Time Elapsed: 16339.846 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] MLMergeDefender. Step: 6850000. Time Elapsed: 16414.398 s. Mean Reward: 0.000. Mean Group Reward: 43.324. Training.
+[INFO] MLMergeDefender. Step: 6900000. Time Elapsed: 16487.626 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 6950000. Time Elapsed: 16562.112 s. Mean Reward: 0.000. Mean Group Reward: 43.396. Training.
+[INFO] MLMergeDefender. Step: 7000000. Time Elapsed: 16634.977 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-6999958.onnx
+[INFO] MLMergeDefender. Step: 7050000. Time Elapsed: 16705.889 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 7100000. Time Elapsed: 16779.623 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 7150000. Time Elapsed: 16851.810 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 7200000. Time Elapsed: 16925.824 s. Mean Reward: 0.000. Mean Group Reward: 43.358. Training.
+[INFO] MLMergeDefender. Step: 7250000. Time Elapsed: 16998.827 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] MLMergeDefender. Step: 7300000. Time Elapsed: 17071.413 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 7350000. Time Elapsed: 17145.295 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 7400000. Time Elapsed: 17215.926 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] MLMergeDefender. Step: 7450000. Time Elapsed: 17289.003 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 7500000. Time Elapsed: 17362.004 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-7499972.onnx
+[INFO] MLMergeDefender. Step: 7550000. Time Elapsed: 17435.301 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] MLMergeDefender. Step: 7600000. Time Elapsed: 17509.316 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 7650000. Time Elapsed: 17583.054 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 7700000. Time Elapsed: 17656.329 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 7750000. Time Elapsed: 17727.215 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 7800000. Time Elapsed: 17800.232 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 7850000. Time Elapsed: 17875.406 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 7900000. Time Elapsed: 17948.066 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 7950000. Time Elapsed: 18019.198 s. Mean Reward: 0.000. Mean Group Reward: 43.453. Training.
+[INFO] MLMergeDefender. Step: 8000000. Time Elapsed: 18093.406 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-7999984.onnx
+[INFO] MLMergeDefender. Step: 8050000. Time Elapsed: 18659.682 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 8100000. Time Elapsed: 19608.723 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 8150000. Time Elapsed: 20553.608 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 8200000. Time Elapsed: 21500.928 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 8250000. Time Elapsed: 22419.648 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] MLMergeDefender. Step: 8300000. Time Elapsed: 23357.216 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 8350000. Time Elapsed: 24303.285 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 8400000. Time Elapsed: 25251.519 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 8450000. Time Elapsed: 26199.625 s. Mean Reward: 0.000. Mean Group Reward: 43.264. Training.
+[INFO] MLMergeDefender. Step: 8500000. Time Elapsed: 27148.186 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-8499912.onnx
+[INFO] MLMergeDefender. Step: 8550000. Time Elapsed: 28094.077 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 8600000. Time Elapsed: 29042.746 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 8650000. Time Elapsed: 29993.605 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 8700000. Time Elapsed: 30937.556 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 8750000. Time Elapsed: 31877.300 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 8800000. Time Elapsed: 32826.597 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 8850000. Time Elapsed: 33778.615 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 8900000. Time Elapsed: 34722.249 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] MLMergeDefender. Step: 8950000. Time Elapsed: 35671.067 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 9000000. Time Elapsed: 36619.746 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-8999904.onnx
+[INFO] MLMergeDefender. Step: 9050000. Time Elapsed: 37565.569 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 9100000. Time Elapsed: 38514.247 s. Mean Reward: 0.000. Mean Group Reward: 43.379. Training.
+[INFO] MLMergeDefender. Step: 9150000. Time Elapsed: 39453.707 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 9200000. Time Elapsed: 40406.853 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 9250000. Time Elapsed: 41348.645 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 9300000. Time Elapsed: 42298.841 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 9350000. Time Elapsed: 43253.757 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 9400000. Time Elapsed: 44192.630 s. Mean Reward: 0.000. Mean Group Reward: 43.282. Training.
+[INFO] MLMergeDefender. Step: 9450000. Time Elapsed: 45142.493 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 9500000. Time Elapsed: 46098.820 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-9499952.onnx
+[INFO] MLMergeDefender. Step: 9550000. Time Elapsed: 47037.971 s. Mean Reward: 0.000. Mean Group Reward: 43.888. Training.
+[INFO] MLMergeDefender. Step: 9600000. Time Elapsed: 47986.660 s. Mean Reward: 0.000. Mean Group Reward: 43.384. Training.
+[INFO] MLMergeDefender. Step: 9650000. Time Elapsed: 48931.163 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 9700000. Time Elapsed: 49880.801 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] MLMergeDefender. Step: 9750000. Time Elapsed: 50823.481 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 9800000. Time Elapsed: 51771.414 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 9850000. Time Elapsed: 52727.300 s. Mean Reward: 0.000. Mean Group Reward: 43.520. Training.
+[INFO] MLMergeDefender. Step: 9900000. Time Elapsed: 53663.983 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 9950000. Time Elapsed: 54615.907 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 10000000. Time Elapsed: 55570.221 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-9999970.onnx
+[INFO] MLMergeDefender. Step: 10050000. Time Elapsed: 56505.781 s. Mean Reward: 0.000. Mean Group Reward: 43.318. Training.
+[INFO] MLMergeDefender. Step: 10100000. Time Elapsed: 57446.784 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 10150000. Time Elapsed: 58402.587 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 10200000. Time Elapsed: 59351.867 s. Mean Reward: 0.000. Mean Group Reward: 42.516. Training.
+[INFO] MLMergeDefender. Step: 10250000. Time Elapsed: 60289.923 s. Mean Reward: 0.000. Mean Group Reward: 43.714. Training.
+[INFO] MLMergeDefender. Step: 10300000. Time Elapsed: 61247.888 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+
+[INFO] MLMergeDefender. Step: 10350000. Time Elapsed: 61963.040 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] MLMergeDefender. Step: 10400000. Time Elapsed: 62894.389 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 10450000. Time Elapsed: 63846.048 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 10500000. Time Elapsed: 64789.391 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-10499936.onnx
+[INFO] MLMergeDefender. Step: 10550000. Time Elapsed: 65728.677 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 10600000. Time Elapsed: 66072.820 s. Mean Reward: 0.000. Mean Group Reward: 42.845. Training.
+[INFO] MLMergeDefender. Step: 10650000. Time Elapsed: 66144.678 s. Mean Reward: 0.000. Mean Group Reward: 44.976. Training.
+[INFO] MLMergeDefender. Step: 10700000. Time Elapsed: 66217.434 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 10750000. Time Elapsed: 66288.957 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 10800000. Time Elapsed: 66361.609 s. Mean Reward: 0.000. Mean Group Reward: 42.518. Training.
+[INFO] MLMergeDefender. Step: 10850000. Time Elapsed: 66433.467 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] MLMergeDefender. Step: 10900000. Time Elapsed: 66502.557 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 10950000. Time Elapsed: 66575.575 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 11000000. Time Elapsed: 66647.820 s. Mean Reward: 0.000. Mean Group Reward: 43.400. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-10999950.onnx
+[INFO] MLMergeDefender. Step: 11050000. Time Elapsed: 66720.006 s. Mean Reward: 0.000. Mean Group Reward: 42.146. Training.
+[INFO] MLMergeDefender. Step: 11100000. Time Elapsed: 66792.629 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 11150000. Time Elapsed: 66865.932 s. Mean Reward: 0.000. Mean Group Reward: 43.599. Training.
+[INFO] MLMergeDefender. Step: 11200000. Time Elapsed: 66938.003 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 11250000. Time Elapsed: 67007.690 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 11300000. Time Elapsed: 67080.067 s. Mean Reward: 0.000. Mean Group Reward: 43.387. Training.
+[INFO] MLMergeDefender. Step: 11350000. Time Elapsed: 67152.937 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 11400000. Time Elapsed: 67225.179 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 11450000. Time Elapsed: 67297.834 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 11500000. Time Elapsed: 67370.870 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-11499948.onnx
+[INFO] MLMergeDefender. Step: 11550000. Time Elapsed: 67443.139 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 11600000. Time Elapsed: 67513.534 s. Mean Reward: 0.000. Mean Group Reward: 43.443. Training.
+[INFO] MLMergeDefender. Step: 11650000. Time Elapsed: 67586.294 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] MLMergeDefender. Step: 11700000. Time Elapsed: 67658.265 s. Mean Reward: 0.000. Mean Group Reward: 41.970. Training.
+[INFO] MLMergeDefender. Step: 11750000. Time Elapsed: 67730.241 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 11800000. Time Elapsed: 67802.640 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 11850000. Time Elapsed: 67874.238 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 11900000. Time Elapsed: 67946.760 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 11950000. Time Elapsed: 68019.333 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 12000000. Time Elapsed: 68088.945 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-11999890.onnx
+[INFO] MLMergeDefender. Step: 12050000. Time Elapsed: 68159.914 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 12100000. Time Elapsed: 68234.193 s. Mean Reward: 0.000. Mean Group Reward: 42.413. Training.
+[INFO] MLMergeDefender. Step: 12150000. Time Elapsed: 68305.753 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 12200000. Time Elapsed: 68377.341 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 12250000. Time Elapsed: 68450.611 s. Mean Reward: 0.000. Mean Group Reward: 43.248. Training.
+[INFO] MLMergeDefender. Step: 12300000. Time Elapsed: 68521.064 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 12350000. Time Elapsed: 68593.941 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 12400000. Time Elapsed: 68665.281 s. Mean Reward: 0.000. Mean Group Reward: 42.680. Training.
+[INFO] MLMergeDefender. Step: 12450000. Time Elapsed: 68737.194 s. Mean Reward: 0.000. Mean Group Reward: 41.961. Training.
+[INFO] MLMergeDefender. Step: 12500000. Time Elapsed: 68809.197 s. Mean Reward: 0.000. Mean Group Reward: 42.706. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-12499986.onnx
+[INFO] MLMergeDefender. Step: 12550000. Time Elapsed: 68881.854 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 12600000. Time Elapsed: 68953.765 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 12650000. Time Elapsed: 69023.396 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 12700000. Time Elapsed: 69094.611 s. Mean Reward: 0.000. Mean Group Reward: 44.039. Training.
+[INFO] MLMergeDefender. Step: 12750000. Time Elapsed: 69168.472 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 12800000. Time Elapsed: 69241.142 s. Mean Reward: 0.000. Mean Group Reward: 41.648. Training.
+[INFO] MLMergeDefender. Step: 12850000. Time Elapsed: 69313.195 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 12900000. Time Elapsed: 69386.707 s. Mean Reward: 0.000. Mean Group Reward: 44.975. Training.
+[INFO] MLMergeDefender. Step: 12950000. Time Elapsed: 69460.518 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 13000000. Time Elapsed: 69530.376 s. Mean Reward: 0.000. Mean Group Reward: 44.127. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-12999890.onnx
+[INFO] MLMergeDefender. Step: 13050000. Time Elapsed: 69601.822 s. Mean Reward: 0.000. Mean Group Reward: 43.509. Training.
+[INFO] MLMergeDefender. Step: 13100000. Time Elapsed: 69674.694 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 13150000. Time Elapsed: 69747.262 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 13200000. Time Elapsed: 69818.331 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] MLMergeDefender. Step: 13250000. Time Elapsed: 69891.489 s. Mean Reward: 0.000. Mean Group Reward: 43.323. Training.
+[INFO] MLMergeDefender. Step: 13300000. Time Elapsed: 69963.514 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 13350000. Time Elapsed: 70033.059 s. Mean Reward: 0.000. Mean Group Reward: 43.323. Training.
+[INFO] MLMergeDefender. Step: 13400000. Time Elapsed: 70104.815 s. Mean Reward: 0.000. Mean Group Reward: 42.250. Training.
+[INFO] MLMergeDefender. Step: 13450000. Time Elapsed: 70177.926 s. Mean Reward: 0.000. Mean Group Reward: 43.289. Training.
+[INFO] MLMergeDefender. Step: 13500000. Time Elapsed: 70251.678 s. Mean Reward: 0.000. Mean Group Reward: 44.518. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-13499964.onnx
+[INFO] MLMergeDefender. Step: 13550000. Time Elapsed: 70325.522 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] MLMergeDefender. Step: 13600000. Time Elapsed: 70397.774 s. Mean Reward: 0.000. Mean Group Reward: 43.568. Training.
+[INFO] MLMergeDefender. Step: 13650000. Time Elapsed: 70470.332 s. Mean Reward: 0.000. Mean Group Reward: 42.221. Training.
+[INFO] MLMergeDefender. Step: 13700000. Time Elapsed: 70539.255 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 13750000. Time Elapsed: 70612.751 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] MLMergeDefender. Step: 13800000. Time Elapsed: 70684.726 s. Mean Reward: 0.000. Mean Group Reward: 43.457. Training.
+[INFO] MLMergeDefender. Step: 13850000. Time Elapsed: 70757.646 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] MLMergeDefender. Step: 13900000. Time Elapsed: 70829.669 s. Mean Reward: 0.000. Mean Group Reward: 42.156. Training.
+[INFO] MLMergeDefender. Step: 13950000. Time Elapsed: 70901.191 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 14000000. Time Elapsed: 70973.677 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-13999990.onnx
+[INFO] MLMergeDefender. Step: 14050000. Time Elapsed: 71043.903 s. Mean Reward: 0.000. Mean Group Reward: 43.479. Training.
+[INFO] MLMergeDefender. Step: 14100000. Time Elapsed: 71116.197 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 14150000. Time Elapsed: 71188.850 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 14200000. Time Elapsed: 71261.074 s. Mean Reward: 0.000. Mean Group Reward: 44.622. Training.
+[INFO] MLMergeDefender. Step: 14250000. Time Elapsed: 71333.400 s. Mean Reward: 0.000. Mean Group Reward: 41.068. Training.
+[INFO] MLMergeDefender. Step: 14300000. Time Elapsed: 71405.694 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 14350000. Time Elapsed: 71474.316 s. Mean Reward: 0.000. Mean Group Reward: 44.872. Training.
+[INFO] MLMergeDefender. Step: 14400000. Time Elapsed: 71546.635 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 14450000. Time Elapsed: 71618.651 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 14500000. Time Elapsed: 71690.622 s. Mean Reward: 0.000. Mean Group Reward: 44.979. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-14499964.onnx
+[INFO] MLMergeDefender. Step: 14550000. Time Elapsed: 71763.523 s. Mean Reward: 0.000. Mean Group Reward: 44.976. Training.
+[INFO] MLMergeDefender. Step: 14600000. Time Elapsed: 71834.263 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 14650000. Time Elapsed: 71906.952 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 14700000. Time Elapsed: 71976.291 s. Mean Reward: 0.000. Mean Group Reward: 43.376. Training.
+[INFO] MLMergeDefender. Step: 14750000. Time Elapsed: 72048.475 s. Mean Reward: 0.000. Mean Group Reward: 43.286. Training.
+[INFO] MLMergeDefender. Step: 14800000. Time Elapsed: 72121.170 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 14850000. Time Elapsed: 72192.754 s. Mean Reward: 0.000. Mean Group Reward: 44.976. Training.
+[INFO] MLMergeDefender. Step: 14900000. Time Elapsed: 72264.770 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 14950000. Time Elapsed: 72336.400 s. Mean Reward: 0.000. Mean Group Reward: 44.980. Training.
+[INFO] MLMergeDefender. Step: 15000000. Time Elapsed: 72408.437 s. Mean Reward: 0.000. Mean Group Reward: 44.977. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-14999932.onnx
+[INFO] MLMergeDefender. Step: 15050000. Time Elapsed: 72478.932 s. Mean Reward: 0.000. Mean Group Reward: 43.254. Training.
+[INFO] MLMergeDefender. Step: 15100000. Time Elapsed: 72551.161 s. Mean Reward: 0.000. Mean Group Reward: 44.982. Training.
+[INFO] MLMergeDefender. Step: 15150000. Time Elapsed: 72623.237 s. Mean Reward: 0.000. Mean Group Reward: 44.975. Training.
+[INFO] MLMergeDefender. Step: 15200000. Time Elapsed: 72696.321 s. Mean Reward: 0.000. Mean Group Reward: 44.978. Training.
+[INFO] MLMergeDefender. Step: 15250000. Time Elapsed: 72767.717 s. Mean Reward: 0.000. Mean Group Reward: 44.985. Training.
+[INFO] MLMergeDefender. Step: 15300000. Time Elapsed: 72839.350 s. Mean Reward: 0.000. Mean Group Reward: 43.446. Training.
+[INFO] MLMergeDefender. Step: 15350000. Time Elapsed: 72911.416 s. Mean Reward: 0.000. Mean Group Reward: 43.378. Training.
+[INFO] MLMergeDefender. Step: 15400000. Time Elapsed: 72980.777 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 15450000. Time Elapsed: 73052.266 s. Mean Reward: 0.000. Mean Group Reward: 44.981. Training.
+[INFO] MLMergeDefender. Step: 15500000. Time Elapsed: 73127.733 s. Mean Reward: 0.000. Mean Group Reward: 44.975. Training.
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-15499896.onnx
+[INFO] Exported results/mergedefense_2/MLMergeDefender/MLMergeDefender-15500152.onnx
+[INFO] Copied results/mergedefense_2/MLMergeDefender/MLMergeDefender-15500152.onnx to results/mergedefense_2/MLMergeDefender.onnx.
+PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python mlagents-learn    122720,42s user 2250,34s system 170% cpu 20:18:48,63 total
+
