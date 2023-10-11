@@ -4,6 +4,7 @@ using System.Linq;
 using Common;
 using UnityEngine;
 using UnityEngine.Assertions;
+using Random = UnityEngine.Random;
 
 public class SceneManager : MonoBehaviour
 {
@@ -11,9 +12,9 @@ public class SceneManager : MonoBehaviour
     public GameObject SMAPlayfieldPrefab;
     public GameObject mergeDefenderAgentPrefab;
     public uint runPerSetting = 100;
-    
+
     public uint parallelRunningEnvs;
-    
+
     public uint[] PossibleAreaSideLength;
     public float[] PossibleMaxAgentSpeed;
     public uint[] PossibleMaxEpisodeLength;
@@ -33,17 +34,21 @@ public class SceneManager : MonoBehaviour
         public float targetHitRadius;
         public float maxVisionDistance;
     }
-    
+
     private List<IModel> RunningModels;
     private Queue<SettingCombo> SettingCombos;
+    private bool CalculatedTotalRoundsSend;
+    private int CalculatedTotalRounds;
 
     private void OnEnable()
     {
         SettingCombos ??= new Queue<SettingCombo>();
         RunningModels ??= new List<IModel>();
-        
+
+        var settingsList = new List<SettingCombo>();
         // Generate all possible settings
-        RoundStatisticDto.EnvironmentTypeEnum[] allEnvironmentTypes = { RoundStatisticDto.EnvironmentTypeEnum.GWO, RoundStatisticDto.EnvironmentTypeEnum.SMA };
+        RoundStatisticDto.EnvironmentTypeEnum[] allEnvironmentTypes =
+            { RoundStatisticDto.EnvironmentTypeEnum.GWO, RoundStatisticDto.EnvironmentTypeEnum.SMA };
         for (uint c = 0; c < runPerSetting; c++)
         {
             foreach (uint areaSideLength in PossibleAreaSideLength)
@@ -60,9 +65,10 @@ public class SceneManager : MonoBehaviour
                                 {
                                     foreach (float maxVisionDistance in PossibleMaxVisionDistance)
                                     {
-                                        foreach (RoundStatisticDto.EnvironmentTypeEnum environmentType in allEnvironmentTypes)
+                                        foreach (RoundStatisticDto.EnvironmentTypeEnum environmentType in
+                                                 allEnvironmentTypes)
                                         {
-                                            SettingCombos.Enqueue(
+                                            settingsList.Add(
                                                 new SettingCombo()
                                                 {
                                                     EnvironmentType = environmentType,
@@ -74,7 +80,7 @@ public class SceneManager : MonoBehaviour
                                                     targetHitRadius = targetHitRadius,
                                                     maxVisionDistance = maxVisionDistance,
                                                 }
-                                                );
+                                            );
                                         }
                                     }
                                 }
@@ -84,30 +90,38 @@ public class SceneManager : MonoBehaviour
                 }
             }
         }
-        
+
+        // Shuffle setting combination order
+        // This only works because `OrderBy` caches the return value of the delegate.
+        settingsList = settingsList.OrderBy(x => Random.value).ToList();
+        SettingCombos = new Queue<SettingCombo>(settingsList);
+
         Assert.AreEqual(
             SettingCombos.Count,
             PossibleAreaSideLength.Length * PossibleMaxAgentSpeed.Length * PossibleMaxEpisodeLength.Length *
             PossibleNrMlDefenders.Length * PossibleNrAttackers.Length * PossibleTargetHitRadius.Length *
-            PossibleMaxVisionDistance.Length * runPerSetting * Enum.GetValues(typeof(RoundStatisticDto.EnvironmentTypeEnum)).Length,
+            PossibleMaxVisionDistance.Length * runPerSetting *
+            Enum.GetValues(typeof(RoundStatisticDto.EnvironmentTypeEnum)).Length,
             "Safety check of number of setting combos failed"
         );
+        CalculatedTotalRounds = SettingCombos.Count;
 
         if (parallelRunningEnvs == 0)
         {
-            Debug.LogWarning("Will run no environments because the setting tells us we should run 0 in parallel.", this);
+            Debug.LogWarning("Will run no environments because the setting tells us we should run 0 in parallel.",
+                this);
         }
-        
+
         Debug.Log($"Nr of setting combos: {SettingCombos.Count}");
 
         float maxSideLength = PossibleAreaSideLength.Max();
         for (int i = 0; i < parallelRunningEnvs; i++)
         {
             Vector3 localEnvPos = new Vector3(
-                (i%2==0) ? 0 : maxSideLength,
+                (i % 2 == 0) ? 0 : maxSideLength,
                 0,
-                (int)(i/2) * maxSideLength
-                );
+                (int)(i / 2) * maxSideLength
+            );
             SettingCombo nextSettings;
             bool gotValue = SettingCombos.TryDequeue(out nextSettings);
             if (gotValue)
@@ -158,7 +172,8 @@ public class SceneManager : MonoBehaviour
         bool removed = RunningModels.Remove(model);
         if (!removed)
         {
-            Debug.LogWarning("Object contained an IModel but that one was not in our list of running models. Buggy behaviour!", go);
+            Debug.LogWarning(
+                "Object contained an IModel but that one was not in our list of running models. Buggy behaviour!", go);
         }
 
         if (RunningModels.Count == 0 && SettingCombos.Count == 0)
@@ -189,7 +204,8 @@ public class SceneManager : MonoBehaviour
                 Assert.IsNotNull(gwoModelInterface);
 
                 // Inject settings
-                gwoModelInterface.maxDimensions = new Vector3(settings.areaSideLength, settings.areaSideLength, settings.areaSideLength);
+                gwoModelInterface.maxDimensions = new Vector3(settings.areaSideLength, settings.areaSideLength,
+                    settings.areaSideLength);
                 gwoModelInterface.maxAgentVelocity = settings.maxAgentSpeed;
                 gwoModelInterface.maxSteps = settings.maxEpisodeLength;
                 gwoModelInterface.badMlAgentCount = settings.nrMlDefenders;
@@ -228,5 +244,13 @@ public class SceneManager : MonoBehaviour
         iModel.SetSimulationFinishedEvent(() => ReplaceItself(go));
         RunningModels.Add(iModel);
         return go;
+    }
+
+    private void Update()
+    {
+        if (CalculatedTotalRoundsSend) return;
+
+        StatsEventSystem.current.OnCalculatedTotalRounds(CalculatedTotalRounds);
+        CalculatedTotalRoundsSend = true;
     }
 }
